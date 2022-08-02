@@ -1,20 +1,20 @@
-// $('.submit').on('click', function (event) {
-//   event.preventDefault();
-
-//   iziToast.show({
-//     title: 'Hey',
-//     message: 'What would you like to add?',
-//   });
-// });
-
-let btn = document.querySelector('.submit');
-btn.addEventListener('click', (event) => {
+$('#submit').on('click', function (event) {
   event.preventDefault();
+
   iziToast.show({
     title: 'Hey',
     message: 'What would you like to add?',
   });
 });
+
+// let btn = document.querySelector('#submit');
+// btn.addEventListener('click', (event) => {
+//   event.preventDefault();
+//   iziToast.show({
+//     title: 'Hey',
+//     message: 'What would you like to add?',
+//   });
+// });
 // iziToast.info({
 //   id: 'info',
 //   title: 'Hello',
