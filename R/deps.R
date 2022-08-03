@@ -38,3 +38,17 @@ use_ns <- function() {
     package = "buzz"
   )
 }
+
+#' @export
+use_pnotify <- function() {
+
+  htmltools::htmlDependency(
+    name = "buzz-pnotify",
+    version = "0.1.0",
+    src = "",
+    script = list("PNotify.js", "notify.js"),
+    stylesheet = list("PNotify.css",
+                      "BrightTheme.css"),
+    package = "buzz"
+  )
+}

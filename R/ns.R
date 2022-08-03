@@ -1,5 +1,5 @@
 #' @export
-notify <- function(message = "Hello", layout = "growl",
+notice <- function(message = "Hello", layout = "growl",
                    effect = "jelly", type = "error",
                    session = getDefaultReactiveDomain()) {
 
