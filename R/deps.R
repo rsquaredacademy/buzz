@@ -52,3 +52,21 @@ use_pnotify <- function() {
     package = "buzz"
   )
 }
+
+#' @export 
+useTingle <- function() {
+  htmltools::htmlDependency(
+    name = "buzz-tingle",
+    version = "0.1.0",
+    src = "",
+    script = "tingle.min.js",
+    stylesheet = "tingle.min.css",
+    package = "buzz"
+  ) 
+}
+
+# useBootBox()
+# useAlertify()
+# useIziToast()
+# useMicroTip()
+# useNotify()
