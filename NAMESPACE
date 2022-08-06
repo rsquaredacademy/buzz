@@ -3,6 +3,8 @@
 export(buzz)
 export(notice)
 export(notify)
+export(useMicroTip)
+export(useTingle)
 export(use_ns)
 export(use_pnotify)
 export(use_toast)

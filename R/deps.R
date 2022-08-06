@@ -65,6 +65,17 @@ useTingle <- function() {
   ) 
 }
 
+#' @export 
+useMicroTip <- function() {
+  htmltools::htmlDependency(
+    name = "buzz-microtip",
+    version = "0.1.0",
+    src = "",
+    stylesheet = "microtip.min.css",
+    package = "buzz"
+  )
+}
+
 # useBootBox()
 # useAlertify()
 # useIziToast()
