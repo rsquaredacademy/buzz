@@ -76,6 +76,17 @@ useMicroTip <- function() {
   )
 }
 
+#' @export 
+useBootBox <- function() {
+  htmltools::htmlDependency(
+    name = "buzz-bootbox",
+    version = "0.1.0",
+    src = "",
+    script = "bootbox.all.min.js",
+    package = "buzz"
+  )
+}
+
 # useBootBox()
 # useAlertify()
 # useIziToast()
