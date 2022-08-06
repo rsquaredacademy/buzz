@@ -87,6 +87,21 @@ useBootBox <- function() {
   )
 }
 
+#' @export 
+useAlertify <- function() {
+  htmltools::htmlDependency(
+    name = "buzz-alertify",
+    version = "0.1.0",
+    src = "",
+    script = "alertify.min.js",
+    stylesheet = list("alertify.min.css",
+                      "default.min.css",
+                      "semantic.min.css",
+                      "bootstrap.min.css"),
+    package = "buzz"
+  )
+}
+
 # useBootBox()
 # useAlertify()
 # useIziToast()

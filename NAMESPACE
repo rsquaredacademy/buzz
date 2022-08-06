@@ -3,6 +3,7 @@
 export(buzz)
 export(notice)
 export(notify)
+export(useAlertify)
 export(useBootBox)
 export(useMicroTip)
 export(useTingle)
