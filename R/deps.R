@@ -1,5 +1,5 @@
 #' @export
-use_toast <- function() {
+useIziToast <- function() {
 
   izi_toast <- htmltools::htmlDependency(
     name = "buzz-pkg",
@@ -22,7 +22,7 @@ use_toast <- function() {
 }
 
 #' @export
-use_ns <- function() {
+useNS <- function() {
 
   htmltools::htmlDependency(
     name = "buzz-ns",
@@ -40,7 +40,7 @@ use_ns <- function() {
 }
 
 #' @export
-use_pnotify <- function() {
+useNotify <- function() {
 
   htmltools::htmlDependency(
     name = "buzz-pnotify",
@@ -101,9 +101,3 @@ useAlertify <- function() {
     package = "buzz"
   )
 }
-
-# useBootBox()
-# useAlertify()
-# useIziToast()
-# useMicroTip()
-# useNotify()
