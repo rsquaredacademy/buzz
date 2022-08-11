@@ -1,3 +1,4 @@
+#' @import shiny htmltools
 #' @export
 toast <- function(title = "Hey", message = NULL, type = "show", theme = NULL, position = "center", 
                  duration = 5000, progress_bar_color = NULL, background_color = NULL, 
