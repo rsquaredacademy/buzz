@@ -17,6 +17,14 @@ Shiny.addCustomMessageHandler((type = 'toast.send'), function (message) {
   }
 });
 
+Shiny.addCustomMessageHandler((type = 'tip.send'), function (message) {
+  let selector = '#' + message.id;
+  let el = document.querySelector(selector);
+  el.setAttribute('aria-label', message.tip);
+  el.setAttribute('data-microtip-position', message.position);
+  el.setAttribute('role', 'tooltip');
+});
+
 // $('#submit').on('click', function (event) {
 //   event.preventDefault();
 

@@ -71,6 +71,7 @@ useMicroTip <- function() {
     name = "buzz-microtip",
     version = "0.1.0",
     src = "",
+    script = "script.js",
     stylesheet = "microtip.min.css",
     package = "buzz"
   )
