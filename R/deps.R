@@ -1,5 +1,5 @@
 #' @export
-useIziToast <- function() {
+useToast <- function() {
 
   izi_toast <- htmltools::htmlDependency(
     name = "buzz-pkg",

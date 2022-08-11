@@ -1,4 +1,4 @@
-Shiny.addCustomMessageHandler((type = 'buzz.send'), function (message) {
+Shiny.addCustomMessageHandler((type = 'toast.send'), function (message) {
   iziToast.show(message);
 });
 
