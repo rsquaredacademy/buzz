@@ -1,11 +1,12 @@
 #' @export 
-microTip <- function(id = NULL, tip = "Hey! tooltip!", position = "top", 
+microTip <- function(id = NULL, tip = "Hey! tooltip!", position = "top", size = NULL, 
                      session = getDefaultReactiveDomain()) {
 
   notice = list(
     id = id,
     tip = tip,
-    position = position
+    position = position,
+    size = size
   )
 
   session$sendCustomMessage(
