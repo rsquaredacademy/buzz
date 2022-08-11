@@ -8,7 +8,7 @@ notify <- function(title = "Hey", text = NULL,
   )
 
   session$sendCustomMessage(
-    type = "pnotify-send",
+    type = "notify.send",
     message = notice
   )
 }

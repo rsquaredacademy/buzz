@@ -29,6 +29,10 @@ Shiny.addCustomMessageHandler((type = 'tip.send'), function (message) {
   }
 });
 
+Shiny.addCustomMessageHandler((type = 'notify.send'), function (message) {
+  PNotify.notice(message);
+});
+
 // $('#submit').on('click', function (event) {
 //   event.preventDefault();
 

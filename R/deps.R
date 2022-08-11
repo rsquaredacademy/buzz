@@ -46,7 +46,7 @@ useNotify <- function() {
     name = "buzz-pnotify",
     version = "0.1.0",
     src = "",
-    script = list("PNotify.js", "notify.js"),
+    script = list("PNotify.js", "notify.js", "script.js"),
     stylesheet = list("PNotify.css",
                       "BrightTheme.css"),
     package = "buzz"
