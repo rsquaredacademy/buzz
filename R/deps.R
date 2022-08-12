@@ -31,10 +31,12 @@ useNS <- function() {
     script = list("modernizr.custom.js",
                   list(src = "classie.js", defer = NA),
                   list(src = "notificationFx.js", defer = NA),
-                  list(src = "ns.js", defer = NA)),
+                  list(src = "script.js", defer = NA)),
     stylesheet = list("normalize.css",
                       "ns-default.css",
-                      "ns-style-growl.css"),
+                      "ns-style-growl.css",
+                      "ns-style-attached.css",
+                      "ns-style-bar.css"),
     package = "buzz"
   )
 }

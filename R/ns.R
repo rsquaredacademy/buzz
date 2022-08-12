@@ -1,17 +1,16 @@
 #' @export
-notice <- function(message = "Hello", layout = "growl",
-                   effect = "jelly", type = "error",
-                   session = getDefaultReactiveDomain()) {
+notice <- function(message = "Hello", type = "notice", layout = "growl",
+                   effect = "jelly", session = getDefaultReactiveDomain()) {
 
   notice = list(
-    message = "Hello there!",
-    layout = "growl",
-    effect = "jelly",
-    type = "error"
+    message = message,
+    layout = layout,
+    effect = effect,
+    type = type
   )
 
   session$sendCustomMessage(
-    type = 'send-notice',
+    type = 'ns.send',
     message = notice
   )
 
