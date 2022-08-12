@@ -1,10 +1,11 @@
 #' @export
-notify <- function(title = "Hey", text = NULL,
+notify <- function(title = "Hey", text = NULL, type = "notice",
                  session = getDefaultReactiveDomain()) {
 
   notice = list(
     title = title,
-    text = text
+    text = text,
+    type = type
   )
 
   session$sendCustomMessage(
