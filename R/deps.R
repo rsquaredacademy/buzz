@@ -61,7 +61,7 @@ useTingle <- function() {
     name = "buzz-tingle",
     version = "0.1.0",
     src = "",
-    script = "tingle.min.js",
+    script = list("tingle.min.js", "script.js"),
     stylesheet = "tingle.min.css",
     package = "buzz"
   ) 

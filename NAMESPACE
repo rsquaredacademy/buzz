@@ -3,6 +3,7 @@
 export(microTip)
 export(notice)
 export(notify)
+export(tingle)
 export(toast)
 export(useAlertify)
 export(useBootBox)

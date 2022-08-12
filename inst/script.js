@@ -1,3 +1,4 @@
+/* iziToast */
 Shiny.addCustomMessageHandler((type = 'toast.send'), function (message) {
   switch (message.type) {
     case 'info':
@@ -17,6 +18,7 @@ Shiny.addCustomMessageHandler((type = 'toast.send'), function (message) {
   }
 });
 
+/* MicroTip */
 Shiny.addCustomMessageHandler((type = 'tip.send'), function (message) {
   let selector = '#' + message.id;
   let el = document.querySelector(selector);
@@ -29,6 +31,7 @@ Shiny.addCustomMessageHandler((type = 'tip.send'), function (message) {
   }
 });
 
+/* PNotify */
 Shiny.addCustomMessageHandler((type = 'notify.send'), function (message) {
   switch (message.type) {
     case 'notice':
@@ -48,7 +51,15 @@ Shiny.addCustomMessageHandler((type = 'notify.send'), function (message) {
   }
 });
 
+/* Notification Style */
 Shiny.addCustomMessageHandler((type = 'ns.send'), function (message) {
   let notification = new NotificationFx(message);
   notification.show();
+});
+
+/* Tingle */
+Shiny.addCustomMessageHandler((type = 'tingle.send'), function (message) {
+  let tingleModal = new tingle.modal();
+  tingleModal.setContent(message.content);
+  tingleModal.open();
 });
