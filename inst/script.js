@@ -79,12 +79,16 @@ Shiny.addCustomMessageHandler((type = 'tingle.send'), function (message) {
 });
 
 /* Alertify */
-Shiny.addCustomMessageHandler((type = 'alertify.send'), function (message) {
+Shiny.addCustomMessageHandler((type = 'alertify.alert'), function (message) {
   alertify.alert(
     (title = message.title),
     (message = message.message),
-    function () {
-      alertify.message('OK');
-    }
+    function () {}
   );
+});
+
+Shiny.addCustomMessageHandler((type = 'alertify.notify'), function (message) {
+  alertify.set('notifier', 'delay', message.delay);
+  alertify.set('notifier', 'position', message.position);
+  alertify.notify((message = message.message), (type = message.type));
 });
