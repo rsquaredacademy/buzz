@@ -96,7 +96,7 @@ useAlertify <- function() {
     name = "buzz-alertify",
     version = "0.1.0",
     src = "",
-    script = "alertify.min.js",
+    script = list("alertify.min.js", "script.js"),
     stylesheet = list("alertify.min.css",
                       "default.min.css",
                       "semantic.min.css",

@@ -77,3 +77,14 @@ Shiny.addCustomMessageHandler((type = 'tingle.send'), function (message) {
   tingleModal.setContent(message.content);
   tingleModal.open();
 });
+
+/* Alertify */
+Shiny.addCustomMessageHandler((type = 'alertify.send'), function (message) {
+  alertify.alert(
+    (title = message.title),
+    (message = message.message),
+    function () {
+      alertify.message('OK');
+    }
+  );
+});
