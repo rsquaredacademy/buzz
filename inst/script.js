@@ -80,11 +80,28 @@ Shiny.addCustomMessageHandler((type = 'tingle.send'), function (message) {
 
 /* Alertify */
 Shiny.addCustomMessageHandler((type = 'alertify.alert'), function (message) {
-  alertify.alert(
-    (title = message.title),
-    (message = message.message),
-    function () {}
-  );
+  alertify
+    .alert()
+    .setting({
+      title: message.title,
+      message: message.message,
+      autoReset: message.autoReset,
+      closable: message.closable,
+      frameless: message.frameless,
+      maximiable: message.maximiable,
+      modal: message.modal,
+      movable: message.movable,
+      moveBounded: message.moveBounded,
+      overflow: message.overflow,
+      padding: message.padding,
+      pinnable: message.pinnable,
+      resizeable: message.resizeable,
+      startMaximized: message.startMaximized,
+      transition: message.transition,
+      transitionOff: message.transitionOff,
+      onok: function () {},
+    })
+    .show();
 });
 
 Shiny.addCustomMessageHandler((type = 'alertify.notify'), function (message) {
