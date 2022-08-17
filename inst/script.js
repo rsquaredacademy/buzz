@@ -124,3 +124,11 @@ Shiny.addCustomMessageHandler((type = 'alertify.notify'), function (message) {
       alertify.message(message.message);
   }
 });
+
+Shiny.addCustomMessageHandler((type = 'bootbox.send'), function (message) {
+  bootbox.alert({
+    title: message.title,
+    message: message.message,
+    size: message.size,
+  });
+});

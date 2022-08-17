@@ -85,7 +85,8 @@ useBootBox <- function() {
     name = "buzz-bootbox",
     version = "0.1.0",
     src = "",
-    script = "bootbox.all.min.js",
+    script = list(list(src = "bootbox.all.min.js", defer = NA), 
+                  list(src = "script.js", defer = NA)),
     package = "buzz"
   )
 }

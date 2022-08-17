@@ -2,6 +2,7 @@
 
 export(alertify_alert)
 export(alertify_notify)
+export(bootBox)
 export(microTip)
 export(notice)
 export(notify)
