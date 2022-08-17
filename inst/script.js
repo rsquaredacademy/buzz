@@ -107,5 +107,20 @@ Shiny.addCustomMessageHandler((type = 'alertify.alert'), function (message) {
 Shiny.addCustomMessageHandler((type = 'alertify.notify'), function (message) {
   alertify.set('notifier', 'delay', message.delay);
   alertify.set('notifier', 'position', message.position);
-  alertify.notify((message = message.message), (type = message.type));
+  switch (message.type) {
+    case 'success':
+      alertify.success(message.message);
+      break;
+    case 'warning':
+      alertify.warning(message.message);
+      break;
+    case 'error':
+      alertify.error(message.message);
+      break;
+    case 'message':
+      alertify.message(message.message);
+      break;
+    default:
+      alertify.message(message.message);
+  }
 });
