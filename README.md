@@ -18,14 +18,55 @@ You can install the development version of buzz from
 devtools::install_github("aravindhebbali/buzz")
 ```
 
+## Usage
+
+Below is a simple example of the package, visit the
+[website](https://buzz.rsquaredacademy.com) for more.
+
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ``` r
+library(shiny)
 library(buzz)
-## basic example code
+
+ui <- fluidPage(
+
+  useBootBox(), # include dependencies
+  actionButton(inputId = "notify",
+               label   = "Show Notification")
+
+)
+
+server <- function(input, output, session) {
+
+  observeEvent(input$pnotify, {
+    bootBox(class = "rubberBand") # display the alert
+  })
+}
+
+shinyApp(ui, server)
 ```
+
+## Details
+
+**buzz** offers several types of notifications/alerts and tooltip. Visit
+the below websites to learn more:
+
+-   [iziToast](https://github.com/marcelodolza/iziToast)
+-   [Notification
+    Styles](https://tympanus.net/Development/NotificationStyles/)
+-   [PNotify](https://github.com/sciactive/pnotify)
+-   [Tingle](https://github.com/robinparisi/tingle)
+-   [BootBox](https://github.com/makeusabrew/bootbox)
+-   [Alertify](https://github.com/MohammadYounes/AlertifyJS)
+-   [MicroTip](https://github.com/ghosh/microtip)
+
+## Getting Help
+
+If you encounter a bug, please file a minimal reproducible example using
+[reprex](https://reprex.tidyverse.org/index.html) on github. For
+questions and clarifications, use
+[StackOverflow](https://stackoverflow.com/).
 
 ## Code of Conduct
 
