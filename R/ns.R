@@ -42,13 +42,13 @@ notice <- function(message = "Hello", type = "notice", layout = "growl",
 
   notice = list(
     message = message,
-    layout = layout,
-    effect = effect,
-    type = type
+    layout  = layout,
+    effect  = effect,
+    type    = type
   )
 
   session$sendCustomMessage(
-    type = 'ns.send',
+    type    = 'ns.send',
     message = notice
   )
 
