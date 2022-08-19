@@ -1,4 +1,42 @@
+#' Alertify
+#' 
+#' Pretty browser dialogs and notifications.
+#' 
+#' @param title Dialog title.
+#' @param message Dialog contents.
+#' @param type Dialog type. Defaults to `"success"`. Valid values are: 
+#' \itemize{
+#' \item `"success"`
+#' \item `"error"`
+#' \item `"warning"`
+#' \item `"message"`
+#' }
+#' @param btn_label The `OK` button label.
+#' @param transition Transition effect to be used when showing/hiding the dialog. Defaults to `"pulse"`. Valid values are: 
+#' \itemize{
+#' \item `"pulse"`
+#' \item `"slide"`
+#' \item `"zoom"`
+#' \item `"fade"`
+#' \item `"flipx"`
+#' \item `"flipy"`
+#' }
+#' @param transition_off Logical; if `TRUE`, transition effect is disabled. Defaults to `FALSE`.
+#' @param closable Logical; if `TRUE` (the default), a `Close` button is displayed in the header of the dialog.
+#' @param auto_reset Logical; if `TRUE` (the default), the dialog will reset size/position on window resize.
+#' @param frameless Logical; if `TRUE`, hides both header and footer of the dialog. Defaults to `FALSE`.
+#' @param maximizable Logical; if `TRUE` (the default), the `Maximize` button is displayed in the header of the dialog.
+#' @param modal Logical; if `TRUE` (the default), a screen dimmer will be used and access to the page contents will be prevented.
+#' @param movable Logical; if `TRUE` (the default), the dialog is movable.
+#' @param move_bounded Logical; if `TRUE`, the dialog is not allowed to go off-screen. Defaults to `FALSE`.
+#' @param overflow Logical; if `TRUE` (the default), the content overflow is managed by the dialog
+#' @param padding Logical; if `TRUE` (the default), the content padding is managed by the dialog.
+#' @param pinnable Logical; if `TRUE` (the default), the `Pin`` button is displayed in the header of the dialog.
+#' @param resizeable Logical; if `TRUE`, the dialog is resizable. Defaults to `FALSE`. 
+#' @param start_maximized Logical; if `TRUE`, the dialog will start in a maximized state. Defaults to `FALSE`.
+#' 
 #' @export 
+#' 
 alertify_alert <- function(title = "Alert Title", message = "Alert Message", type = "success",
                            btn_label = "OK", transition = "pulse", transition_off = FALSE, 
                            closable = TRUE, auto_reset = FALSE, frameless = FALSE,
@@ -8,28 +46,28 @@ alertify_alert <- function(title = "Alert Title", message = "Alert Message", typ
                            session = getDefaultReactiveDomain()) {
 
   notice = list(
-    title = title,
-    message = message,
-    type = type,
-    label = btn_label,
-    autoReset = auto_reset,
-    closable = closable,
-    frameless = frameless,
-    maximizable = maximizable,
-    movable = movable,
-    modal = modal,
-    moveBounded = move_bounded,
-    overflow = overflow,
-    padding = padding,
-    pinnable = pinnable,
-    resizeable = resizeable,
+    title          = title,
+    message        = message,
+    type           = type,
+    label          = btn_label,
+    autoReset      = auto_reset,
+    closable       = closable,
+    frameless      = frameless,
+    maximizable    = maximizable,
+    movable        = movable,
+    modal          = modal,
+    moveBounded    = move_bounded,
+    overflow       = overflow,
+    padding        = padding,
+    pinnable       = pinnable,
+    resizeable     = resizeable,
     startMaximized = start_maximized,
-    transition = transition,
-    transitionOff = transition_off
+    transition     = transition,
+    transitionOff  = transition_off
   )
 
   session$sendCustomMessage(
-    type = "alertify.alert",
+    type    = "alertify.alert",
     message = notice
   )
 }
@@ -40,14 +78,14 @@ alertify_notify <- function(message = "Alert Message", type = "success", delay =
                             session = getDefaultReactiveDomain()) {
 
   notice = list(
-    message = message,
-    type = type,
-    delay = delay,
+    message  = message,
+    type     = type,
+    delay    = delay,
     position = position
   )
 
   session$sendCustomMessage(
-    type = "alertify.notify",
+    type    = "alertify.notify",
     message = notice
   )
 }
