@@ -2,7 +2,7 @@
 % Please edit documentation in R/alertify.R
 \name{alertify_alert}
 \alias{alertify_alert}
-\title{Alertify}
+\title{Alertify Alerts}
 \usage{
 alertify_alert(
   title = "Alert Title",
@@ -78,5 +78,5 @@ alertify_alert(
 \item{start_maximized}{Logical; if `TRUE`, the dialog will start in a maximized state. Defaults to `FALSE`.}
 }
 \description{
-Pretty browser dialogs and notifications.
+Pretty browser dialogs.
 }

@@ -1,6 +1,6 @@
-#' Alertify
+#' Alertify Alerts
 #' 
-#' Pretty browser dialogs and notifications.
+#' Pretty browser dialogs.
 #' 
 #' @param title Dialog title.
 #' @param message Dialog contents.
@@ -72,7 +72,32 @@ alertify_alert <- function(title = "Alert Title", message = "Alert Message", typ
   )
 }
 
+#' Alertify Notifications
+#' 
+#' Pretty browser notifications.
+#' 
+#' @param message Notification message contents.
+#' @param type Type of notification message. Defaults to `"success"`. Valid values are:  
+#' \itemize{
+#' \item `"notify"`
+#' \item `"mesage"`
+#' \item `"success"`
+#' \item `"warning"`
+#' \item `"error"`
+#' }
+#' @param delay The time (in seconds) to wait before the notification is auto-dismissed. `0` will keep notification open till clicked.
+#' @param position Position of the notification. Defaults to `"bottom-right"`. Valid values are:  
+#' \itemize{
+#' \item `"bottom-right"`
+#' \item `"bottom-left"`
+#' \item `"bottom-center"`
+#' \item `"top-right"`
+#' \item `"top-left"`
+#' \item `"top-center"`
+#' }
+#' 
 #' @export 
+#' 
 alertify_notify <- function(message = "Alert Message", type = "success", delay = 5,
                             position = "bottom-right", 
                             session = getDefaultReactiveDomain()) {
