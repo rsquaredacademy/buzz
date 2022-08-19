@@ -5,7 +5,7 @@
 #' @param title Title of the toast.
 #' @param message Message of toast.
 #' @param theme Theme of toast. Choose between `"light"` or `"dark"`.
-#' @param position Where toast will be shown. Defaults to `"bottomRight"`. Any of the following #' are valid:
+#' @param position Where toast will be shown. Defaults to `"bottomRight"`. Any of the following are valid:
 #' \itemize{
 #' \item bottomRight
 #' \item bottomLeft

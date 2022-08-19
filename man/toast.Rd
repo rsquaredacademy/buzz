@@ -49,7 +49,7 @@ toast(
 
 \item{theme}{Theme of toast. Choose between `"light"` or `"dark"`.}
 
-\item{position}{Where toast will be shown. Defaults to `"bottomRight"`. Any of the following #' are valid:
+\item{position}{Where toast will be shown. Defaults to `"bottomRight"`. Any of the following are valid:
 \itemize{
 \item bottomRight
 \item bottomLeft
