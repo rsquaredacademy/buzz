@@ -1,4 +1,4 @@
-#' Preview Standby
+#' Preview Alerts
 #'
 #' Preview different types of alerts/notifications.
 #'
@@ -13,7 +13,7 @@
 #' }
 #' @export
 #'
-previewStandby <- function(type = "toast") {
+previewBuzz <- function(type = "toast") {
 
   dep <- switch(type,
                 "alertify" = useAlertify(),
