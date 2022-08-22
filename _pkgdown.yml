@@ -1,0 +1,60 @@
+url: https://buzz.rsquaredacademy.com
+template:
+  bootstrap: 5
+
+authors:
+  Aravind Hebbali:
+    href: https://www.aravindhebbali.com
+
+templates:
+  params:
+    bootswatch: cerulean
+    ganalytics: UA-57270671-33
+
+navbar:
+  title: 'buzz'
+  type: inverse
+  left:
+    - text: 'Home'
+      href: index.html
+    - text: 'Reference'
+      menu:
+        - text: 'Functions'
+          href: reference/index.html
+        - text: 'News'
+          href: news/index.html
+  right:
+    - icon: fa-github
+      href: https://github.com/rsquaredacademy/buzz
+
+home:
+  links:
+    - text: Online courses
+      href: https://www.rsquaredacademy.com
+    - text: R packages
+      href: https://pkgs.rsquaredacademy.com
+    - text: Blog
+      href: https://blog.rsquaredacademy.com
+    - text: ebooks
+      href: https://ebooks.rsquaredacademy.com
+
+reference:
+  - title: Notifications
+
+    contents:
+      - alertify
+      - bootBox
+      - notice
+      - notify
+      - tingle
+      - toast
+
+  - title: Tooltip
+
+    contents:
+      - microTip
+
+  - title: Preview Notifications
+
+    contents:
+      - previewBuzz
