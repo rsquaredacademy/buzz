@@ -32,9 +32,14 @@ devtools::install_github("rsquaredacademy/buzz")
 
 ## Usage
 
-<!-- Below is a simple example of the package, visit the [website](https://buzz.rsquaredacademy.com) for more. -->
+To use alerts or noticiat from **buzz** in your Shiny application, follow the below steps:
 
-## Example
+- Include the dependencies in the **UI** part of the app using the appropriate
+`use*` functions (`useToast()` in the below example).
+- Include the corresponding rendering function in the **Server** part of the 
+app (`toast()` in the below example).
+
+### Example
 
 ```{r example, eval=FALSE}
 library(shiny)
@@ -58,17 +63,18 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 ```
 
-## Details
+The below table displays the dependency and rendering functions along with references:
 
-**buzz** offers several types of notifications/alerts and tooltip. Visit the below websites to learn more:
-
-- [iziToast](https://github.com/marcelodolza/iziToast)
-- [Notification Styles](https://tympanus.net/Development/NotificationStyles/)
-- [PNotify](https://github.com/sciactive/pnotify)
-- [Tingle](https://github.com/robinparisi/tingle)
-- [BootBox](https://github.com/makeusabrew/bootbox)
-- [Alertify](https://github.com/MohammadYounes/AlertifyJS)
-- [MicroTip](https://github.com/ghosh/microtip)
+| Index | Dependency      | Render              | Reference                                                                   |
+| ------| -------------   | -------------       | -------------                                                               |
+| 1     | `useAlertify()` | `alertify_alert()`  | [Alertify](https://github.com/MohammadYounes/AlertifyJS)                    |
+| 2     | `useAlertify()` | `alertify_notify()` | [Alertify](https://github.com/MohammadYounes/AlertifyJS)                    |
+| 3     | `useBootBox()`  | `bootBox()`         | [BootBox](https://github.com/makeusabrew/bootbox)                           |
+| 4     | `useMicroTip()` | `microTip()`        | [MicroTip](https://github.com/ghosh/microtip)                               |
+| 5     | `useNS()`       | `notice()`          | [Notification Styles](https://tympanus.net/Development/NotificationStyles/) |
+| 6     | `useNotify()`   | `notify()`          | [PNotify](https://github.com/sciactive/pnotify)                             |
+| 7     | `useTingle()`   | `tingle()`          | [Tingle](https://github.com/robinparisi/tingle)                             |
+| 8     | `useToast()`    | `toast()`           | [iziToast](https://github.com/marcelodolza/iziToast)                        |
 
 
 ## Getting Help

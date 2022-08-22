@@ -20,6 +20,11 @@ Depends:
 Imports: 
     htmltools,
     shiny
+Suggests: 
+    rmarkdown,
+    knitr,
+    kableExtra
 License: GPL (>= 3)
 Encoding: UTF-8
 RoxygenNote: 7.1.1
+VignetteBuilder: knitr
