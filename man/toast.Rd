@@ -10,6 +10,7 @@ useToast()
 toast(
   title = "Hey",
   message = NULL,
+  type = NULL,
   theme = NULL,
   position = "center",
   duration = 5000,
@@ -49,6 +50,14 @@ toast(
 \item{title}{Title of the toast.}
 
 \item{message}{Message of toast.}
+
+\item{type}{Type of notification. Defaults to \code{NULL}. Valid values are:
+\itemize{
+\item \code{"info"}
+\item \code{"success"}
+\item \code{"warning"}
+\item \code{"error"}
+}}
 
 \item{theme}{Theme of toast. Choose between `"light"` or `"dark"`.}
 

@@ -4,6 +4,13 @@
 #' 
 #' @param title Title of the toast.
 #' @param message Message of toast.
+#' @param type Type of notification. Defaults to \code{NULL}. Valid values are:  
+#' \itemize{
+#' \item \code{"info"}
+#' \item \code{"success"}
+#' \item \code{"warning"}
+#' \item \code{"error"}
+#' }
 #' @param theme Theme of toast. Choose between `"light"` or `"dark"`.
 #' @param position Where toast will be shown. Defaults to `"bottomRight"`. Any of the following are valid:
 #' \itemize{
@@ -81,7 +88,7 @@
 #' 
 #' @export
 #' 
-toast <- function(title = "Hey", message = NULL, theme = NULL, position = "center", 
+toast <- function(title = "Hey", message = NULL, type = NULL, theme = NULL, position = "center", 
                  duration = 5000, progress_bar_color = NULL, background_color = NULL, 
                  max_width = NULL, title_color = NULL, title_size = NULL, title_line_height = NULL,
                  message_color = NULL, message_size = NULL, message_line_height = NULL,
