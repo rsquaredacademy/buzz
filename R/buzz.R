@@ -6,7 +6,7 @@
 #' \href{https://github.com/rsquaredacademy/buzz}{GitHub}
 #' 
 #' @import shiny htmltools
-#' 
+#' @keywords internal
 #' @docType package
 #' @name buzz
 NULL
