@@ -30,6 +30,14 @@
 #' @param translucent Logical; if `TRUE`, creates see through notice. Defaults to `FALSE`.
 #' @param non_blocking Logical; if `TRUE`, notice fades to show elements underneath. Defaults to `FALSE`.
 #' 
+#' @section Functions:
+#' \itemize{
+#' \item \code{useNotify}: Dependencies to include in your UI.
+#' \item \code{notify}: Display notifications.
+#' }
+#' 
+#' @name notify
+#' 
 #' @export
 #' 
 notify <- function(title = "Hey", text = NULL, type = "notice", icon = TRUE, delay = 8000,

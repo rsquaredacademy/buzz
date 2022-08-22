@@ -21,6 +21,14 @@
 #' \item `"large"`
 #' }
 #' 
+#' @section Functions:
+#' \itemize{
+#' \item \code{useMicroTip}: Dependencies to include in your UI.
+#' \item \code{microTip}: Add tooltip.
+#' }
+#' 
+#' @name microTip
+#' 
 #' @export 
 #' 
 microTip <- function(id = NULL, tip = "Hey! tooltip!", position = "top", size = NULL, 

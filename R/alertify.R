@@ -1,6 +1,6 @@
-#' Alertify Alerts
+#' Alertify 
 #' 
-#' Pretty browser dialogs.
+#' Pretty browser alerts and notifications.
 #' 
 #' @param title Dialog title.
 #' @param message Dialog contents.
@@ -21,6 +21,16 @@
 #' \item `"flipx"`
 #' \item `"flipy"`
 #' }
+#' @param delay The time (in seconds) to wait before the notification is auto-dismissed. `0` will keep notification open till clicked.
+#' @param position Position of the notification. Defaults to `"bottom-right"`. Valid values are:  
+#' \itemize{
+#' \item `"bottom-right"`
+#' \item `"bottom-left"`
+#' \item `"bottom-center"`
+#' \item `"top-right"`
+#' \item `"top-left"`
+#' \item `"top-center"`
+#' }
 #' @param transition_off Logical; if `TRUE`, transition effect is disabled. Defaults to `FALSE`.
 #' @param closable Logical; if `TRUE` (the default), a `Close` button is displayed in the header of the dialog.
 #' @param auto_reset Logical; if `TRUE` (the default), the dialog will reset size/position on window resize.
@@ -35,7 +45,21 @@
 #' @param resizeable Logical; if `TRUE`, the dialog is resizable. Defaults to `FALSE`. 
 #' @param start_maximized Logical; if `TRUE`, the dialog will start in a maximized state. Defaults to `FALSE`.
 #' 
+#' @section Functions:
+#' \itemize{
+#' \item \code{useAlertify}: Dependencies to include in your UI.
+#' \item \code{alertify_alert}: Display alerts.
+#' \item \code{alertify_notify}: Display notifications.
+#' }
+#' 
+#' @name alertify 
+#' 
 #' @export 
+#' 
+NULL
+
+#' @rdname alertify
+#' @export
 #' 
 alertify_alert <- function(title = "Alert Title", message = "Alert Message", type = "success",
                            btn_label = "OK", transition = "pulse", transition_off = FALSE, 
@@ -72,30 +96,7 @@ alertify_alert <- function(title = "Alert Title", message = "Alert Message", typ
   )
 }
 
-#' Alertify Notifications
-#' 
-#' Pretty browser notifications.
-#' 
-#' @param message Notification message contents.
-#' @param type Type of notification message. Defaults to `"success"`. Valid values are:  
-#' \itemize{
-#' \item `"notify"`
-#' \item `"mesage"`
-#' \item `"success"`
-#' \item `"warning"`
-#' \item `"error"`
-#' }
-#' @param delay The time (in seconds) to wait before the notification is auto-dismissed. `0` will keep notification open till clicked.
-#' @param position Position of the notification. Defaults to `"bottom-right"`. Valid values are:  
-#' \itemize{
-#' \item `"bottom-right"`
-#' \item `"bottom-left"`
-#' \item `"bottom-center"`
-#' \item `"top-right"`
-#' \item `"top-left"`
-#' \item `"top-center"`
-#' }
-#' 
+#' @rdname alertify
 #' @export 
 #' 
 alertify_notify <- function(message = "Alert Message", type = "success", delay = 5,

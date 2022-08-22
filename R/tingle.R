@@ -16,6 +16,14 @@
 #' \item `"left"`
 #' }
 #' 
+#' @section Functions:
+#' \itemize{
+#' \item \code{useTingle}: Dependencies to include in your UI.
+#' \item \code{tingle}: Display modals.
+#' }
+#' 
+#' @name tingle
+#' 
 #' @export 
 #' 
 tingle <- function(content = "Hello", close_button = FALSE, button_label = "Close", 

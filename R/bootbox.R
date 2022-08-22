@@ -22,6 +22,14 @@
 #' @param animate Logical; if `TRUE` (the default), animates the dialog in and out.
 #' @param class Custom CSS class (using Animate.css).
 #' 
+#' @section Functions:
+#' \itemize{
+#' \item \code{useBootBox}: Dependencies to include in your UI.
+#' \item \code{bootBox}: Display modals.
+#' }
+#' 
+#' @name bootBox
+#' 
 #' @export 
 #' 
 bootBox <- function(title = "Your title", message = "Your message here...", size = "small",

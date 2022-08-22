@@ -1,26 +1,20 @@
+#' @rdname toast
 #' @export
 useToast <- function() {
 
-  izi_toast <- htmltools::htmlDependency(
-    name = "buzz-pkg",
+  htmltools::htmlDependency(
+    name = "buzz-toast",
     version = "0.1.0",
     src = "",
-    script = "iziToast.min.js",
+    script = list(list(src = "iziToast.min.js", defer = NA),
+                  list(src = "scriptjs", defer = NA)),
     stylesheet = "iziToast.min.css",
     package = "buzz"
   )
 
-  izi_custom <- htmltools::htmlDependency(
-    name = "buzz-custom",
-    version = "0.1.0",
-    src = "",
-    script = "script.js",
-    package = "buzz"
-  )
-
-  htmltools::tagList(izi_toast, izi_custom)
 }
 
+#' @rdname notice
 #' @export
 useNS <- function() {
 
@@ -28,7 +22,7 @@ useNS <- function() {
     name = "buzz-ns",
     version = "0.1.0",
     src = "",
-    script = list("modernizr.custom.js",
+    script = list(list(src = "modernizr.custom.js", defer = NA),
                   list(src = "classie.js", defer = NA),
                   list(src = "notificationFx.js", defer = NA),
                   list(src = "script.js", defer = NA)),
@@ -41,6 +35,7 @@ useNS <- function() {
   )
 }
 
+#' @rdname notify
 #' @export
 useNotify <- function() {
 
@@ -48,37 +43,43 @@ useNotify <- function() {
     name = "buzz-pnotify",
     version = "0.1.0",
     src = "",
-    script = list("PNotify.js", "notify.js", "script.js"),
+    script = list(list(src = "PNotify.js", defer = NA), 
+                  list(src = "notify.js", defer = NA), 
+                  list(src = "script.js", defer = NA)),
     stylesheet = list("PNotify.css",
                       "BrightTheme.css"),
     package = "buzz"
   )
 }
 
+#' @rdname tingle
 #' @export 
 useTingle <- function() {
   htmltools::htmlDependency(
     name = "buzz-tingle",
     version = "0.1.0",
     src = "",
-    script = list("tingle.min.js", "script.js"),
+    script = list(list(src = "tingle.min.js", defer = NA), 
+                  list(src = "script.js", defer = NA)),
     stylesheet = "tingle.min.css",
     package = "buzz"
   ) 
 }
 
+#' @rdname microTip
 #' @export 
 useMicroTip <- function() {
   htmltools::htmlDependency(
     name = "buzz-microtip",
     version = "0.1.0",
     src = "",
-    script = "script.js",
+    script = list(src = "script.js", defer = NA),
     stylesheet = "microtip.min.css",
     package = "buzz"
   )
 }
 
+#' @rdname bootBox
 #' @export 
 useBootBox <- function() {
   htmltools::htmlDependency(
@@ -92,13 +93,15 @@ useBootBox <- function() {
   )
 }
 
+#' @rdname alertify
 #' @export 
 useAlertify <- function() {
   htmltools::htmlDependency(
     name = "buzz-alertify",
     version = "0.1.0",
     src = "",
-    script = list("alertify.min.js", "script.js"),
+    script = list(list(src = "alertify.min.js", defer = NA), 
+                  list(src = "script.js", defer = NA)),
     stylesheet = list("alertify.min.css",
                       "default.min.css",
                       "semantic.min.css",

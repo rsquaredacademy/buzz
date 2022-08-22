@@ -70,6 +70,14 @@
 #' \item flipOutX
 #' }
 #' 
+#' @section Functions:
+#' \itemize{
+#' \item \code{useToast}: Dependencies to include in your UI.
+#' \item \code{toast}: Display toast notifications.
+#' }
+#' 
+#' @name toast
+#' 
 #' @export
 #' 
 toast <- function(title = "Hey", message = NULL, theme = NULL, position = "center", 

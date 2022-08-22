@@ -35,6 +35,14 @@
 #' }
 #' }
 #' 
+#' @section Functions:
+#' \itemize{
+#' \item \code{useNS}: Dependencies to include in your UI.
+#' \item \code{notice}: Display notifications.
+#' }
+#' 
+#' @name notice
+#' 
 #' @export
 #' 
 notice <- function(message = "Hello", type = "notice", layout = "growl",
