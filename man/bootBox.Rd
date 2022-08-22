@@ -62,3 +62,29 @@ Bootstrap modals made easy.
 }
 }
 
+\examples{
+ 
+if (interactive()) {
+library(shiny)
+library(buzz)
+
+ui <- fluidPage(
+
+  useBootBox(), # include dependencies
+  actionButton(inputId = "btn",
+               label   = "BootBox Demo")
+
+)
+
+server <- function(input, output, session) {
+
+  observeEvent(input$btn, {
+    # display modal
+    bootBox("Hey there!", "Thank you for exploring buzz!")
+  })
+}
+
+shinyApp(ui, server)
+}
+
+}

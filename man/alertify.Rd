@@ -116,3 +116,55 @@ Pretty browser alerts and notifications.
 }
 }
 
+\examples{
+ 
+
+# Example 1: Alert
+if (interactive()) {
+library(shiny)
+library(buzz)
+
+ui <- fluidPage(
+
+  useAlertify(), # include dependencies
+  actionButton(inputId = "btn",
+               label   = "Alert Demo")
+
+)
+
+server <- function(input, output, session) {
+
+  observeEvent(input$btn, {
+    # display alert
+    alertify_alert("Hey there!", "Thank you for exploring buzz!")
+  })
+}
+
+shinyApp(ui, server)
+}
+
+# Example 2: Notification
+if (interactive()) {
+library(shiny)
+library(buzz)
+
+ui <- fluidPage(
+
+  useAlertify(), # include dependencies
+  actionButton(inputId = "btn",
+               label   = "Notification Demo")
+
+)
+
+server <- function(input, output, session) {
+
+  observeEvent(input$btn, {
+    # display notification
+    alertify_notify("Hey there! Thank you for exploring buzz!")
+  })
+}
+
+shinyApp(ui, server)
+}
+
+}

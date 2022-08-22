@@ -37,6 +37,30 @@
 #' \item \code{notify}: Display notifications.
 #' }
 #' 
+#' @examples  
+#' if (interactive()) {
+#' library(shiny)
+#' library(buzz)
+#' 
+#' ui <- fluidPage(
+#' 
+#'   useNotify(), # include dependencies
+#'   actionButton(inputId = "btn",
+#'                label   = "PNotify Demo")
+#' 
+#' )
+#' 
+#' server <- function(input, output, session) {
+#' 
+#'   observeEvent(input$btn, {
+#'     # display notification
+#'     notify("Hey there!", "Thank you for exploring buzz!")
+#'   })
+#' }
+#' 
+#' shinyApp(ui, server)
+#' }
+#' 
 #' @name notify
 #' 
 #' @export

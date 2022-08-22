@@ -23,6 +23,30 @@
 #' \item \code{tingle}: Display modals.
 #' }
 #' 
+#' @examples  
+#' if (interactive()) {
+#' library(shiny)
+#' library(buzz)
+#' 
+#' ui <- fluidPage(
+#' 
+#'   useTingle(), # include dependencies
+#'   actionButton(inputId = "btn",
+#'                label   = "Tingle Demo")
+#' 
+#' )
+#' 
+#' server <- function(input, output, session) {
+#' 
+#'   observeEvent(input$btn, {
+#'     # display modal
+#'     tingle("Hey there!", "Thank you for exploring buzz!")
+#'   })
+#' }
+#' 
+#' shinyApp(ui, server)
+#' }
+#' 
 #' @name tingle
 #' 
 #' @export 

@@ -169,3 +169,29 @@ Lightweight toast notifications
 }
 }
 
+\examples{
+ 
+if (interactive()) {
+library(shiny)
+library(buzz)
+
+ui <- fluidPage(
+
+  useToast(), # include dependencies
+  actionButton(inputId = "btn",
+               label   = "iziToast Demo")
+
+)
+
+server <- function(input, output, session) {
+
+  observeEvent(input$btn, {
+    # display toast notification
+    toast("Hey there!", "Thank you for exploring buzz!")
+  })
+}
+
+shinyApp(ui, server)
+}
+
+}

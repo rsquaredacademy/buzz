@@ -28,6 +28,32 @@
 #' \item \code{microTip}: Add tooltip.
 #' }
 #' 
+#' @examples  
+#' if (interactive()) {
+#' library(shiny)
+#' library(buzz)
+#' 
+#' ui <- fluidPage(
+#' 
+#'   useMicroTip(), # include dependencies
+#'   br(), br(), br(), br(),
+#'   actionButton(inputId = "btn",
+#'                label   = "MicroTip Demo")
+#' 
+#' )
+#' 
+#' server <- function(input, output, session) {
+#' 
+#'   # display tooltip
+#'   microTip(id = "btn", 
+#'            tip = "Hey there! This is a micro tip!",
+#'            position = "bottom-right")
+#'   
+#' }
+#' 
+#' shinyApp(ui, server)
+#' }
+#' 
 #' @name microTip
 #' 
 #' @export 
