@@ -12,8 +12,8 @@ Authors@R: c(
     person("Robin", "Parisi", role = c("ctb", "cph"), comment = "Author of Tingle"),
     person("Marcelo", "Dolza", role = c("ctb", "cph"), comment = "Author of iziToast")
     )
-Description: Easily create highly customizable alerts, notifications, modals 
-    and tooltips in 'Shiny'. Includes several options to customize and may 
+Description: Easily create highly alerts, notifications, modals 
+    and info tips in 'Shiny'. Includes several options to customize and may 
     contain text, icons, images and buttons.
 Depends:
     R(>= 3.3)
