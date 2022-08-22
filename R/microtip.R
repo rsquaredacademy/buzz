@@ -20,6 +20,7 @@
 #' \item `"medium"`
 #' \item `"large"`
 #' }
+#' @param session Shiny session object.
 #' 
 #' @section Functions:
 #' \itemize{

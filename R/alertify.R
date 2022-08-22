@@ -44,6 +44,7 @@
 #' @param pinnable Logical; if `TRUE` (the default), the `Pin`` button is displayed in the header of the dialog.
 #' @param resizeable Logical; if `TRUE`, the dialog is resizable. Defaults to `FALSE`. 
 #' @param start_maximized Logical; if `TRUE`, the dialog will start in a maximized state. Defaults to `FALSE`.
+#' @param session Shiny session object.
 #' 
 #' @section Functions:
 #' \itemize{
@@ -53,8 +54,6 @@
 #' }
 #' 
 #' @name alertify 
-#' 
-#' @export 
 #' 
 NULL
 

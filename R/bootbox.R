@@ -21,6 +21,7 @@
 #' @param close_button Logical; if `TRUE` (the default), a close button is displayed.
 #' @param animate Logical; if `TRUE` (the default), animates the dialog in and out.
 #' @param class Custom CSS class (using Animate.css).
+#' @param session Shiny session object.
 #' 
 #' @section Functions:
 #' \itemize{

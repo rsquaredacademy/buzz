@@ -90,6 +90,8 @@ useAlertify()
 
 \item{start_maximized}{Logical; if `TRUE`, the dialog will start in a maximized state. Defaults to `FALSE`.}
 
+\item{session}{Shiny session object.}
+
 \item{delay}{The time (in seconds) to wait before the notification is auto-dismissed. `0` will keep notification open till clicked.}
 
 \item{position}{Position of the notification. Defaults to `"bottom-right"`. Valid values are:

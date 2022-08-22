@@ -48,6 +48,8 @@ useBootBox()
 \item{animate}{Logical; if `TRUE` (the default), animates the dialog in and out.}
 
 \item{class}{Custom CSS class (using Animate.css).}
+
+\item{session}{Shiny session object.}
 }
 \description{
 Bootstrap modals made easy.

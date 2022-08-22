@@ -34,6 +34,8 @@ tingle(
 \item `"right"`
 \item `"left"`
 }}
+
+\item{session}{Shiny session object.}
 }
 \description{
 Minimalist and easy to use modals.

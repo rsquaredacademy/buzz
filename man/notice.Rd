@@ -51,6 +51,8 @@ notice(
 \item `"exploader"` 
 }
 }}
+
+\item{session}{Shiny session object.}
 }
 \description{
 Simple website notifications with effects

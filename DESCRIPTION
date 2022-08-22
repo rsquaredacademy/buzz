@@ -21,7 +21,5 @@ Imports:
     htmltools,
     shiny
 License: GPL (>= 3)
-URL: https://buzz.rsquaredacademy.com/, https://github.com/rsquaredacademy/buzz
-BugReports: https://github.com/rsquaredacademy/buzz/issues
 Encoding: UTF-8
 RoxygenNote: 7.1.1

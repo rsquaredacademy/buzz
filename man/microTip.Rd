@@ -37,6 +37,8 @@ microTip(
 \item `"medium"`
 \item `"large"`
 }}
+
+\item{session}{Shiny session object.}
 }
 \description{
 Minimal CSS only tooltip.

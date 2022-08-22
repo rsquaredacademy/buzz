@@ -72,6 +72,8 @@ notify(
 \item{translucent}{Logical; if `TRUE`, creates see through notice. Defaults to `FALSE`.}
 
 \item{non_blocking}{Logical; if `TRUE`, notice fades to show elements underneath. Defaults to `FALSE`.}
+
+\item{session}{Shiny session object.}
 }
 \description{
 Beautiful notifications and prompts.

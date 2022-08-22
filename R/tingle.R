@@ -15,6 +15,7 @@
 #' \item `"right"`
 #' \item `"left"`
 #' }
+#' @param session Shiny session object.
 #' 
 #' @section Functions:
 #' \itemize{

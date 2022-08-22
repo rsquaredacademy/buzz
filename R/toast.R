@@ -69,6 +69,7 @@
 #' \item fadeOutRight
 #' \item flipOutX
 #' }
+#' @param session Shiny session object.
 #' 
 #' @section Functions:
 #' \itemize{

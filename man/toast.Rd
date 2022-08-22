@@ -146,6 +146,8 @@ toast(
 \item fadeOutRight
 \item flipOutX
 }}
+
+\item{session}{Shiny session object.}
 }
 \description{
 Lightweight toast notifications

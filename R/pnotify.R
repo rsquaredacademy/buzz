@@ -29,6 +29,7 @@
 #' @param max_text_height Maximum height of the text container. Default is `"200px"`. If the text goes beyond this     #' height, scrollbars will appear. Use `NULL` to remove this restriction.
 #' @param translucent Logical; if `TRUE`, creates see through notice. Defaults to `FALSE`.
 #' @param non_blocking Logical; if `TRUE`, notice fades to show elements underneath. Defaults to `FALSE`.
+#' @param session Shiny session object.
 #' 
 #' @section Functions:
 #' \itemize{

@@ -34,6 +34,7 @@
 #' \item `"exploader"` 
 #' }
 #' }
+#' @param session Shiny session object.
 #' 
 #' @section Functions:
 #' \itemize{
