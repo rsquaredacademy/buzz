@@ -1,15 +1,27 @@
 Package: buzz
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Alerts and Notifications in 'Shiny'
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: GPL (>= 3)
-Encoding: UTF-8
-LazyData: true
+Authors@R: c(
+    person("Aravind", "Hebbali", email = "hebbali.aravind@gmail.com", role = c("aut", "cre")),
+    person("Mohammad", "Younes", role = c("ctb", "cph"), comment = "Author of Alertify"),
+    person("Nick", "Payne", role = c("ctb", "cph"), comment = "Author of BootBox"),
+    person("Indrashish", "Ghosh", role = c("ctb", "cph"), comment = "Author of MicroTip"),
+    person("https://github.com/codrops", role = c("ctb", "cph"), comment = "Author of Notification Styles"),
+    person("Hunter", "Perrin", role = c("ctb", "cph"), comment = "Author of PNotify"),
+    person("Robin", "Parisi", role = c("ctb", "cph"), comment = "Author of Tingle"),
+    person("Marcelo", "Dolza", role = c("ctb", "cph"), comment = "Author of iziToast")
+    )
+Description: Easily create highly customizable alerts, notifications, modals 
+    and tooltips in 'Shiny'. Includes several options to customize and may 
+    contain text, icons, images and buttons.
+Depends:
+    R(>= 3.3)
 Imports: 
     htmltools,
     shiny
+License: GPL (>= 3)
+URL: https://buzz.rsquaredacademy.com/, https://github.com/rsquaredacademy/buzz
+BugReports: https://github.com/rsquaredacademy/buzz/issues
+Encoding: UTF-8
 RoxygenNote: 7.1.1
