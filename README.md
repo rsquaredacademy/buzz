@@ -4,6 +4,7 @@
 # buzz
 
 <!-- badges: start -->
+<!-- [![R-CMD-check](https://github.com/rsquaredacademy/buzz/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rsquaredacademy/buzz/actions/workflows/R-CMD-check.yaml) -->
 <!-- badges: end -->
 
 Easily create alerts, notifications and tooltips in Shiny.
@@ -15,13 +16,12 @@ You can install the development version of buzz from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("aravindhebbali/buzz")
+devtools::install_github("rsquaredacademy/buzz")
 ```
 
 ## Usage
 
-Below is a simple example of the package, visit the
-[website](https://buzz.rsquaredacademy.com) for more.
+<!-- Below is a simple example of the package, visit the [website](https://buzz.rsquaredacademy.com) for more. -->
 
 ## Example
 
