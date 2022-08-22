@@ -7,7 +7,7 @@ useToast <- function() {
     version = "0.1.0",
     src = "",
     script = list(list(src = "iziToast.min.js", defer = NA),
-                  list(src = "scriptjs", defer = NA)),
+                  list(src = "script.js", defer = NA)),
     stylesheet = "iziToast.min.css",
     package = "buzz"
   )
