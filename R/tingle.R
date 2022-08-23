@@ -3,17 +3,17 @@
 #' Minimalist and easy to use modals.
 #' 
 #' @param content Content of the modal.
-#' @param close_button Logical; if `TRUE`, displays a button to close the modal. Defaults to `FALSE`.
-#' @param button_label Label of `close_button`. 
-#' @param button_type Type of button. Defaults to `"default"`. Other valid values are: 
+#' @param close_button Logical; if \code{TRUE}, displays a button to close the modal. Defaults to \code{FALSE}.
+#' @param button_label Label of \code{close_button}. 
+#' @param button_type Type of button. Defaults to \code{"default"}. Other valid values are: 
 #' \itemize{
-#' \item `"primary"`
-#' \item `"danger"`
+#' \item \code{"primary"}
+#' \item \code{"danger"}
 #' }
-#' @param button_position Position of the button inside the modal. Defaults to `"right"`. Valid values are: 
+#' @param button_position Position of the button inside the modal. Defaults to \code{"right"}. Valid values are: 
 #' \itemize{
-#' \item `"right"`
-#' \item `"left"`
+#' \item \code{"right"}
+#' \item \code{"left"}
 #' }
 #' @param session Shiny session object.
 #' 

@@ -88,77 +88,79 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>title</dt>
-<dd><p>Title of the notice. It can be a string, an element or `FALSE` (the default) for no title.</p></dd>
+<dd><p>Title of the notice. It can be a string, an element or <code>FALSE</code> (the default) for no title.</p></dd>
 
 
 <dt>text</dt>
-<dd><p>Text of the notice. It can be a string, an element or `FALSE` (the default) for no text.</p></dd>
+<dd><p>Text of the notice. It can be a string, an element or <code>FALSE</code> (the default) for no text.</p></dd>
 
 
 <dt>type</dt>
-<dd><p>Type of notice. Defaults to `"notice"`. Other valid values are:</p><ul><li><p>`"info"`</p></li>
-<li><p>`"success"`</p></li>
-<li><p>`"error"`</p></li>
+<dd><p>Type of notice. Defaults to <code>"notice"</code>. Other valid values are:</p><ul><li><p><code>"info"</code></p></li>
+<li><p><code>"success"</code></p></li>
+<li><p><code>"error"</code></p></li>
 </ul></dd>
 
 
 <dt>icon</dt>
-<dd><p>Logical; if `TRUE` (the default), default icon is displayed. No icon is displayed if set to `FALSE`.</p></dd>
+<dd><p>Logical; if <code>TRUE</code> (the default), default icon is displayed. No icon is displayed if set to <code>FALSE</code>.</p></dd>
 
 
 <dt>delay</dt>
-<dd><p>Delay in milliseconds before the notice is removed. If set to `"infinity"`, the notice will not close.</p></dd>
+<dd><p>Delay in milliseconds before the notice is removed. If set to <code>"infinity"</code>, the notice will not close.</p></dd>
 
 
 <dt>hide</dt>
-<dd><p>Logical; if `TRUE` (the default), notice is closed after `delay` specified in milliseconds.</p></dd>
+<dd><p>Logical; if <code>TRUE</code> (the default), notice is closed after |codedelay specified in milliseconds.</p></dd>
 
 
 <dt>sticker</dt>
-<dd><p>Logical; if `TRUE` (the default), provides a button for the user to manually stick the notice.</p></dd>
+<dd><p>Logical; if <code>TRUE</code> (the default), provides a button for the user to manually stick the notice.</p></dd>
 
 
 <dt>closer</dt>
-<dd><p>Logical; if `TRUE` (the default), provides a button for the user to manually close the notice.</p></dd>
+<dd><p>Logical; if <code>TRUE</code> (the default), provides a button for the user to manually close the notice.</p></dd>
 
 
 <dt>shadow</dt>
-<dd><p>Logical; if `TRUE` (the default), displays a drop shadow.</p></dd>
+<dd><p>Logical; if <code>TRUE</code> (the default), displays a drop shadow.</p></dd>
 
 
 <dt>mouse_reset</dt>
-<dd><p>Logical; if `TRUE` (the default), resets the hide timer if the mouse moves over the notice.</p></dd>
+<dd><p>Logical; if <code>TRUE</code> (the default), resets the hide timer if the mouse moves over the notice.</p></dd>
 
 
 <dt>animation</dt>
-<dd><p>The animation to be used while displaying and hiding the notice. `"none"` and `"fade"` (the default) #' are supported out of the box.</p></dd>
+<dd><p>The animation to be used while displaying and hiding the notice. <code>"none"</code> and <code>"fade"</code> (the default) 
+are supported out of the box.</p></dd>
 
 
 <dt>animate_speed</dt>
-<dd><p>Speed at which the notice animates in and out. Valid values are:</p><ul><li><p>`"slow"`: 400ms</p></li>
-<li><p>`"normal"`: 250ms</p></li>
-<li><p>`"fast"`: 100ms</p></li>
+<dd><p>Speed at which the notice animates in and out. Valid values are:</p><ul><li><p><code>"slow"</code>: 400ms</p></li>
+<li><p><code>"normal"</code>: 250ms</p></li>
+<li><p><code>"fast"</code>: 100ms</p></li>
 </ul></dd>
 
 
 <dt>width</dt>
-<dd><p>Width of the notice. Default is `"360px"`.</p></dd>
+<dd><p>Width of the notice. Default is <code>"360px"</code>.</p></dd>
 
 
 <dt>min_height</dt>
-<dd><p>Minimum height of the notice. Default is `"16px"`. It will expand to fit the content.</p></dd>
+<dd><p>Minimum height of the notice. Default is <code>"16px"</code>. It will expand to fit the content.</p></dd>
 
 
 <dt>max_text_height</dt>
-<dd><p>Maximum height of the text container. Default is `"200px"`. If the text goes beyond this     #' height, scrollbars will appear. Use `NULL` to remove this restriction.</p></dd>
+<dd><p>Maximum height of the text container. Default is <code>"200px"</code>. If the text goes beyond 
+this height, scrollbars will appear. Use <code>NULL</code> to remove this restriction.</p></dd>
 
 
 <dt>translucent</dt>
-<dd><p>Logical; if `TRUE`, creates see through notice. Defaults to `FALSE`.</p></dd>
+<dd><p>Logical; if <code>TRUE</code>, creates see through notice. Defaults to <code>FALSE</code>.</p></dd>
 
 
 <dt>non_blocking</dt>
-<dd><p>Logical; if `TRUE`, notice fades to show elements underneath. Defaults to `FALSE`.</p></dd>
+<dd><p>Logical; if <code>TRUE</code>, notice fades to show elements underneath. Defaults to <code>FALSE</code>.</p></dd>
 
 
 <dt>session</dt>

@@ -122,22 +122,22 @@
 
 
 <dt>theme</dt>
-<dd><p>Theme of toast. Choose between `"light"` or `"dark"`.</p></dd>
+<dd><p>Theme of toast. Choose between <code>"light"</code> or <code>"dark"</code>.</p></dd>
 
 
 <dt>position</dt>
-<dd><p>Where toast will be shown. Defaults to `"bottomRight"`. Any of the following are valid:</p><ul><li><p>bottomRight</p></li>
-<li><p>bottomLeft</p></li>
-<li><p>topRight</p></li>
-<li><p>topLeft</p></li>
-<li><p>topCenter</p></li>
-<li><p>bottomCenter</p></li>
-<li><p>center</p></li>
+<dd><p>Where toast will be shown. Defaults to <code>"bottomRight"</code>. Valid values are:</p><ul><li><p><code>"bottomRight"</code></p></li>
+<li><p><code>"bottomLeft"</code></p></li>
+<li><p><code>"topRight"</code></p></li>
+<li><p><code>"topLeft"</code></p></li>
+<li><p><code>"topCenter"</code></p></li>
+<li><p><code>"bottomCenter"</code></p></li>
+<li><p><code>"center"</code></p></li>
 </ul></dd>
 
 
 <dt>duration</dt>
-<dd><p>Time in milliseconds to close the toast. Defaults to `5000`. Use `FALSE` to disable.</p></dd>
+<dd><p>Time in milliseconds to close the toast. Defaults to <code>5000</code>. Use <code>FALSE</code> to disable.</p></dd>
 
 
 <dt>progress_bar_color</dt>
@@ -181,96 +181,96 @@
 
 
 <dt>image_width</dt>
-<dd><p>Width of cover image. Defaults to `"50px"`.</p></dd>
+<dd><p>Width of cover image. Defaults to <code>"50px"</code>.</p></dd>
 
 
 <dt>zindex</dt>
-<dd><p>The z-index CSS attribute of the toast. Defaults to `99999`.</p></dd>
+<dd><p>The z-index CSS attribute of the toast. Defaults to <code>99999</code>.</p></dd>
 
 
 <dt>layout</dt>
-<dd><p>Size of the toast. Choose between `1` or `2`.</p></dd>
+<dd><p>Size of the toast. Choose between <code>1</code> or <code>2</code>.</p></dd>
 
 
 <dt>balloon</dt>
-<dd><p>Logical; if `TRUE`, applies a balloon like toast. Defaults to `FALSE`.</p></dd>
+<dd><p>Logical; if <code>TRUE</code>, applies a balloon like toast. Defaults to <code>FALSE</code>.</p></dd>
 
 
 <dt>close</dt>
-<dd><p>Logical; if `TRUE` (the default), shows a <code>x</code> close button.</p></dd>
+<dd><p>Logical; if <code>TRUE</code> (the default), shows a <code>x</code> close button.</p></dd>
 
 
 <dt>close_on_escape</dt>
-<dd><p>Logical; if `TRUE`, allows to close toast using ESC key. Defaults to `FALSE`.</p></dd>
+<dd><p>Logical; if <code>TRUE</code>, allows to close toast using ESC key. Defaults to <code>FALSE</code>.</p></dd>
 
 
 <dt>close_on_click</dt>
-<dd><p>Logical; if `TRUE`, allows to close toast by clicking on it. Defaults to `FALSE`.</p></dd>
+<dd><p>Logical; if <code>TRUE</code>, allows to close toast by clicking on it. Defaults to <code>FALSE</code>.</p></dd>
 
 
 <dt>rtl</dt>
-<dd><p>Logical; if `TRUE`, applies Right to Left style. Defaults to `FALSE`.</p></dd>
+<dd><p>Logical; if <code>TRUE</code>, applies Right to Left style. Defaults to <code>FALSE</code>.</p></dd>
 
 
 <dt>display_mode</dt>
-<dd><p>Rules to show multiple toasts. Default is `0`. Other valid values are:</p><ul><li><p>0: Waits until the current toast is closed before displaying a new one.</p></li>
-<li><p>1: Replaces the current toast with the new toast toast.</p></li>
+<dd><p>Rules to show multiple toasts. Default is <code>0</code>. Valid values are:</p><ul><li><p><code>0</code>: Waits until the current toast is closed before displaying a new one.</p></li>
+<li><p><code>1</code>: Replaces the current toast with the new toast toast.</p></li>
 </ul></dd>
 
 
 <dt>drag_to_close</dt>
-<dd><p>Logical; if `TRUE` (the default), toast can be closed by dragging it.</p></dd>
+<dd><p>Logical; if <code>TRUE</code> (the default), toast can be closed by dragging it.</p></dd>
 
 
 <dt>pause_on_hover</dt>
-<dd><p>Logical; if `TRUE` (the default), pauses the toast timeout while the cursor is on it.</p></dd>
+<dd><p>Logical; if <code>TRUE</code> (the default), pauses the toast timeout while the cursor is on it.</p></dd>
 
 
 <dt>reset_on_hover</dt>
-<dd><p>Logical; if `TRUE`, resets the toast timeout while the cursor is on it. Defaults to    #' `FALSE`.</p></dd>
+<dd><p>Logical; if <code>TRUE</code>, resets the toast timeout while the cursor is on it. Defaults to <code>FALSE</code>.</p></dd>
 
 
 <dt>progress_bar_easing</dt>
-<dd><p>Animation easing of progress bar. Defaults to `"linear"`.</p></dd>
+<dd><p>Animation easing of progress bar. Defaults to <code>"linear"</code>.</p></dd>
 
 
 <dt>overlay</dt>
-<dd><p>Logical; if `TRUE`, displays the overlay layer on the page. Defaults to `FALSE`.</p></dd>
+<dd><p>Logical; if <code>TRUE</code>, displays the overlay layer on the page. Defaults to <code>FALSE</code>.</p></dd>
 
 
 <dt>overlay_close</dt>
-<dd><p>Logical; if `TRUE`, allows to close the toast by clicking on the overlay. Defaults to   #' `FALSE`.</p></dd>
+<dd><p>Logical; if <code>TRUE</code>, allows to close the toast by clicking on the overlay. Defaults to <code>FALSE</code>.</p></dd>
 
 
 <dt>overlay_color</dt>
-<dd><p>Overlay background color. Defaults to `"rgba(0, 0, 0, 0.6)"`. Choose between hexadecimal, #' RGB or keyword values.</p></dd>
+<dd><p>Overlay background color. Defaults to <code>"rgba(0, 0, 0, 0.6)"</code>. Choose between hexadecimal, RGB or keyword values.</p></dd>
 
 
 <dt>animate_inside</dt>
-<dd><p>Logical; if `TRUE` (the default), enables animation of elements in the toast.</p></dd>
+<dd><p>Logical; if <code>TRUE</code> (the default), enables animation of elements in the toast.</p></dd>
 
 
 <dt>transition_in</dt>
-<dd><p>Toast open animation. Defaults to `"fadeInUp"`. It can be any of the following:</p><ul><li><p>bounceInLeft</p></li>
-<li><p>bounceInRight</p></li>
-<li><p>bounceInUp</p></li>
-<li><p>bounceInDown</p></li>
-<li><p>fadeIn</p></li>
-<li><p>fadeInDown</p></li>
-<li><p>fadeInUp</p></li>
-<li><p>fadeInLeft</p></li>
-<li><p>fadeInRight</p></li>
-<li><p>flipInX</p></li>
+<dd><p>Toast open animation. Defaults to <code>"fadeInUp"</code>. Valid values are:</p><ul><li><p><code>"bounceInLeft"</code></p></li>
+<li><p><code>"bounceInRight"</code></p></li>
+<li><p><code>"bounceInUp"</code></p></li>
+<li><p><code>"bounceInDown"</code></p></li>
+<li><p><code>"fadeIn"</code></p></li>
+<li><p><code>"fadeInDown"</code></p></li>
+<li><p><code>"fadeInUp"</code></p></li>
+<li><p><code>"fadeInLeft"</code></p></li>
+<li><p><code>"fadeInRight"</code></p></li>
+<li><p><code>"flipInX"</code></p></li>
 </ul></dd>
 
 
 <dt>transition_out</dt>
-<dd><p>Toast close animation. Defaults to `"fadeOut"`. It can be any of the following:</p><ul><li><p>fadeOut</p></li>
-<li><p>fadeOutDown</p></li>
-<li><p>fadeOutUp</p></li>
-<li><p>fadeOutLeft</p></li>
-<li><p>fadeOutRight</p></li>
-<li><p>flipOutX</p></li>
+<dd><p>Toast close animation. Defaults to <code>"fadeOut"</code>. Valid values are:</p><ul><li><p><code>"fadeOut"</code></p></li>
+<li><p><code>"fadeOutDown"</code></p></li>
+<li><p><code>"fadeOutUp"</code></p></li>
+<li><p><code>"fadeOutLeft"</code></p></li>
+<li><p><code>"fadeOutRight"</code></p></li>
+<li><p><code>"flipOutX"</code></p></li>
 </ul></dd>
 
 

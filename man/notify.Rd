@@ -29,49 +29,51 @@ notify(
 )
 }
 \arguments{
-\item{title}{Title of the notice. It can be a string, an element or `FALSE` (the default) for no title.}
+\item{title}{Title of the notice. It can be a string, an element or \code{FALSE} (the default) for no title.}
 
-\item{text}{Text of the notice. It can be a string, an element or `FALSE` (the default) for no text.}
+\item{text}{Text of the notice. It can be a string, an element or \code{FALSE} (the default) for no text.}
 
-\item{type}{Type of notice. Defaults to `"notice"`. Other valid values are:
+\item{type}{Type of notice. Defaults to \code{"notice"}. Other valid values are:
 \itemize{
-\item `"info"`
-\item `"success"`
-\item `"error"`
+\item \code{"info"}
+\item \code{"success"}
+\item \code{"error"}
 }}
 
-\item{icon}{Logical; if `TRUE` (the default), default icon is displayed. No icon is displayed if set to `FALSE`.}
+\item{icon}{Logical; if \code{TRUE} (the default), default icon is displayed. No icon is displayed if set to \code{FALSE}.}
 
-\item{delay}{Delay in milliseconds before the notice is removed. If set to `"infinity"`, the notice will not close.}
+\item{delay}{Delay in milliseconds before the notice is removed. If set to \code{"infinity"}, the notice will not close.}
 
-\item{hide}{Logical; if `TRUE` (the default), notice is closed after `delay` specified in milliseconds.}
+\item{hide}{Logical; if \code{TRUE} (the default), notice is closed after |code{delay} specified in milliseconds.}
 
-\item{sticker}{Logical; if `TRUE` (the default), provides a button for the user to manually stick the notice.}
+\item{sticker}{Logical; if \code{TRUE} (the default), provides a button for the user to manually stick the notice.}
 
-\item{closer}{Logical; if `TRUE` (the default), provides a button for the user to manually close the notice.}
+\item{closer}{Logical; if \code{TRUE} (the default), provides a button for the user to manually close the notice.}
 
-\item{shadow}{Logical; if `TRUE` (the default), displays a drop shadow.}
+\item{shadow}{Logical; if \code{TRUE} (the default), displays a drop shadow.}
 
-\item{mouse_reset}{Logical; if `TRUE` (the default), resets the hide timer if the mouse moves over the notice.}
+\item{mouse_reset}{Logical; if \code{TRUE} (the default), resets the hide timer if the mouse moves over the notice.}
 
-\item{animation}{The animation to be used while displaying and hiding the notice. `"none"` and `"fade"` (the default) #' are supported out of the box.}
+\item{animation}{The animation to be used while displaying and hiding the notice. \code{"none"} and \code{"fade"} (the default) 
+are supported out of the box.}
 
 \item{animate_speed}{Speed at which the notice animates in and out. Valid values are:
 \itemize{
-\item `"slow"`: 400ms
-\item `"normal"`: 250ms
-\item `"fast"`: 100ms
+\item \code{"slow"}: 400ms
+\item \code{"normal"}: 250ms
+\item \code{"fast"}: 100ms
 }}
 
-\item{width}{Width of the notice. Default is `"360px"`.}
+\item{width}{Width of the notice. Default is \code{"360px"}.}
 
-\item{min_height}{Minimum height of the notice. Default is `"16px"`. It will expand to fit the content.}
+\item{min_height}{Minimum height of the notice. Default is \code{"16px"}. It will expand to fit the content.}
 
-\item{max_text_height}{Maximum height of the text container. Default is `"200px"`. If the text goes beyond this     #' height, scrollbars will appear. Use `NULL` to remove this restriction.}
+\item{max_text_height}{Maximum height of the text container. Default is \code{"200px"}. If the text goes beyond 
+this height, scrollbars will appear. Use \code{NULL} to remove this restriction.}
 
-\item{translucent}{Logical; if `TRUE`, creates see through notice. Defaults to `FALSE`.}
+\item{translucent}{Logical; if \code{TRUE}, creates see through notice. Defaults to \code{FALSE}.}
 
-\item{non_blocking}{Logical; if `TRUE`, notice fades to show elements underneath. Defaults to `FALSE`.}
+\item{non_blocking}{Logical; if \code{TRUE}, notice fades to show elements underneath. Defaults to \code{FALSE}.}
 
 \item{session}{Shiny session object.}
 }

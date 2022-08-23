@@ -19,20 +19,20 @@ tingle(
 \arguments{
 \item{content}{Content of the modal.}
 
-\item{close_button}{Logical; if `TRUE`, displays a button to close the modal. Defaults to `FALSE`.}
+\item{close_button}{Logical; if \code{TRUE}, displays a button to close the modal. Defaults to \code{FALSE}.}
 
-\item{button_label}{Label of `close_button`.}
+\item{button_label}{Label of \code{close_button}.}
 
-\item{button_type}{Type of button. Defaults to `"default"`. Other valid values are: 
+\item{button_type}{Type of button. Defaults to \code{"default"}. Other valid values are: 
 \itemize{
-\item `"primary"`
-\item `"danger"`
+\item \code{"primary"}
+\item \code{"danger"}
 }}
 
-\item{button_position}{Position of the button inside the modal. Defaults to `"right"`. Valid values are: 
+\item{button_position}{Position of the button inside the modal. Defaults to \code{"right"}. Valid values are: 
 \itemize{
-\item `"right"`
-\item `"left"`
+\item \code{"right"}
+\item \code{"left"}
 }}
 
 \item{session}{Shiny session object.}

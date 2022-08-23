@@ -4,7 +4,10 @@
 # buzz
 
 <!-- badges: start -->
-<!-- [![R-CMD-check](https://github.com/rsquaredacademy/buzz/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rsquaredacademy/buzz/actions/workflows/R-CMD-check.yaml) -->
+
+[![R-CMD-check](https://github.com/rsquaredacademy/buzz/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rsquaredacademy/buzz/actions/workflows/R-CMD-check.yaml)
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 <!-- badges: end -->
 
 Easily create alerts, notifications and tooltips in Shiny.
@@ -21,7 +24,7 @@ devtools::install_github("rsquaredacademy/buzz")
 
 ## Usage
 
-To use alerts or noticiat from **buzz** in your Shiny application,
+To use alerts or notifications from **buzz** in your Shiny application,
 follow the below steps:
 
 -   Include the dependencies in the **UI** part of the app using the
@@ -52,6 +55,8 @@ server <- function(input, output, session) {
 
 shinyApp(ui, server)
 ```
+
+## Details
 
 The below table displays the dependency and rendering functions along
 with references:

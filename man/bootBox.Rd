@@ -27,25 +27,26 @@ useBootBox()
 
 \item{size}{Adds the relevant Bootstrap modal size class to the dialog wrapper. Valid values are:
 \itemize{
-\item `"small"`
-\item `"large"`
-\item `"extra-large"`
+\item \code{"small"}
+\item \code{"large"}
+\item \code{"extra-large"}
 }}
 
-\item{close_on_escape}{Logical; if `TRUE` (the default), allows the user to dismiss the dialog by hitting ESC key.}
+\item{close_on_escape}{Logical; if \code{TRUE} (the default), allows the user to dismiss the dialog by hitting \code{ESC} key.}
 
-\item{show}{Logical; if `TRUE` (the default), the dialog is shown immediately.}
+\item{show}{Logical; if \code{TRUE} (the default), the dialog is shown immediately.}
 
-\item{backdrop}{Logical; if `TRUE`, the backdrop is displayed and clicking on it dismisses the dialog. Defaults to `NULL`. Valid values are: 
+\item{backdrop}{Logical; if \code{TRUE}, the backdrop is displayed and clicking on it dismisses the dialog. Defaults to \code{NULL}. 
+Valid values are: 
 \itemize{
-\item `NULL`: The backdrop is displayed, but clicking on it has no effect.
-\item `TRUE`: The backdrop is displayed, and clicking on it dismisses the dialog.
-\item `FALSE`: The backdrop is not displayed.
+\item \code{NULL}: The backdrop is displayed, but clicking on it has no effect.
+\item \code{TRUE}: The backdrop is displayed, and clicking on it dismisses the dialog.
+\item \code{FALSE}: The backdrop is not displayed.
 }}
 
-\item{close_button}{Logical; if `TRUE` (the default), a close button is displayed.}
+\item{close_button}{Logical; if \code{TRUE} (the default), a close button is displayed.}
 
-\item{animate}{Logical; if `TRUE` (the default), animates the dialog in and out.}
+\item{animate}{Logical; if \code{TRUE} (the default), animates the dialog in and out.}
 
 \item{class}{Custom CSS class (using Animate.css).}
 

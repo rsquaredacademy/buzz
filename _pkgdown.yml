@@ -33,14 +33,14 @@ navbar:
 
 home:
   links:
-    - text: Online courses
-      href: https://www.rsquaredacademy.com
-    - text: R packages
+    - text: Our R packages
       href: https://pkgs.rsquaredacademy.com
     - text: Blog
       href: https://blog.rsquaredacademy.com
     - text: ebooks
       href: https://ebooks.rsquaredacademy.com
+    - text: Online courses
+      href: https://www.rsquaredacademy.com
 
 reference:
   - title: Notifications

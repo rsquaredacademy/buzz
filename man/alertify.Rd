@@ -44,64 +44,64 @@ useAlertify()
 
 \item{message}{Dialog contents.}
 
-\item{type}{Dialog type. Defaults to `"success"`. Valid values are: 
+\item{type}{Dialog type. Defaults to \code{"success"}. Valid values are: 
 \itemize{
-\item `"success"`
-\item `"error"`
-\item `"warning"`
-\item `"message"`
+\item \code{"success"}
+\item \code{"error"}
+\item \code{"warning"}
+\item \code{"message"}
 }}
 
-\item{btn_label}{The `OK` button label.}
+\item{btn_label}{The \code{OK} button label.}
 
-\item{transition}{Transition effect to be used when showing/hiding the dialog. Defaults to `"pulse"`. Valid values are: 
+\item{transition}{Transition effect to be used when showing/hiding the dialog. Defaults to \code{"pulse"}. Valid values are: 
 \itemize{
-\item `"pulse"`
-\item `"slide"`
-\item `"zoom"`
-\item `"fade"`
-\item `"flipx"`
-\item `"flipy"`
+\item \code{"pulse"}
+\item \code{"slide"}
+\item \code{"zoom"}
+\item \code{"fade"}
+\item \code{"flipx"}
+\item \code{"flipy"}
 }}
 
-\item{transition_off}{Logical; if `TRUE`, transition effect is disabled. Defaults to `FALSE`.}
+\item{transition_off}{Logical; if \code{TRUE}, transition effect is disabled. Defaults to \code{FALSE}.}
 
-\item{closable}{Logical; if `TRUE` (the default), a `Close` button is displayed in the header of the dialog.}
+\item{closable}{Logical; if \code{TRUE} (the default), a |code{Close} button is displayed in the header of the dialog.}
 
-\item{auto_reset}{Logical; if `TRUE` (the default), the dialog will reset size/position on window resize.}
+\item{auto_reset}{Logical; if \code{TRUE} (the default), the dialog will reset size/position on window resize.}
 
-\item{frameless}{Logical; if `TRUE`, hides both header and footer of the dialog. Defaults to `FALSE`.}
+\item{frameless}{Logical; if \code{TRUE}, hides both header and footer of the dialog. Defaults to \code{FALSE}.}
 
-\item{maximizable}{Logical; if `TRUE` (the default), the `Maximize` button is displayed in the header of the dialog.}
+\item{maximizable}{Logical; if \code{TRUE} (the default), the \code{Maximize} button is displayed in the header of the dialog.}
 
-\item{modal}{Logical; if `TRUE` (the default), a screen dimmer will be used and access to the page contents will be prevented.}
+\item{modal}{Logical; if \code{TRUE} (the default), a screen dimmer will be used and access to the page contents will be prevented.}
 
-\item{movable}{Logical; if `TRUE` (the default), the dialog is movable.}
+\item{movable}{Logical; if \code{TRUE} (the default), the dialog is movable.}
 
-\item{move_bounded}{Logical; if `TRUE`, the dialog is not allowed to go off-screen. Defaults to `FALSE`.}
+\item{move_bounded}{Logical; if \code{TRUE}, the dialog is not allowed to go off-screen. Defaults to \code{FALSE}.}
 
-\item{overflow}{Logical; if `TRUE` (the default), the content overflow is managed by the dialog}
+\item{overflow}{Logical; if \code{TRUE} (the default), the content overflow is managed by the dialog}
 
-\item{padding}{Logical; if `TRUE` (the default), the content padding is managed by the dialog.}
+\item{padding}{Logical; if \code{TRUE} (the default), the content padding is managed by the dialog.}
 
-\item{pinnable}{Logical; if `TRUE` (the default), the `Pin`` button is displayed in the header of the dialog.}
+\item{pinnable}{Logical; if \code{TRUE} (the default), the \code{Pin} button is displayed in the header of the dialog.}
 
-\item{resizeable}{Logical; if `TRUE`, the dialog is resizable. Defaults to `FALSE`.}
+\item{resizeable}{Logical; if \code{TRUE}, the dialog is resizable. Defaults to \code{FALSE}.}
 
-\item{start_maximized}{Logical; if `TRUE`, the dialog will start in a maximized state. Defaults to `FALSE`.}
+\item{start_maximized}{Logical; if \code{TRUE}, the dialog will start in a maximized state. Defaults to \code{FALSE}.}
 
 \item{session}{Shiny session object.}
 
-\item{delay}{The time (in seconds) to wait before the notification is auto-dismissed. `0` will keep notification open till clicked.}
+\item{delay}{The time (in seconds) to wait before the notification is auto-dismissed. \code{0} will keep notification open till clicked.}
 
-\item{position}{Position of the notification. Defaults to `"bottom-right"`. Valid values are:
+\item{position}{Position of the notification. Defaults to \code{"bottom-right"}. Valid values are:
 \itemize{
-\item `"bottom-right"`
-\item `"bottom-left"`
-\item `"bottom-center"`
-\item `"top-right"`
-\item `"top-left"`
-\item `"top-center"`
+\item \code{"bottom-right"}
+\item \code{"bottom-left"}
+\item \code{"bottom-center"}
+\item \code{"top-right"}
+\item \code{"top-left"}
+\item \code{"top-center"}
 }}
 }
 \description{

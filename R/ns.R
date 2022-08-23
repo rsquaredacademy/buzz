@@ -3,35 +3,35 @@
 #' Simple website notifications with effects
 #' 
 #' @param message Notification message.
-#' @param type Notification type. Default is `"notice"`. Other valid values are: 
+#' @param type Notification type. Defaults to \code{"notice"}. Other valid values are: 
 #' \itemize{
-#' \item `"success"`
-#' \item `"warning"`
-#' \item `"error"`
+#' \item \code{"success"}
+#' \item \code{"warning"}
+#' \item \code{"error"}
 #' }
-#' @param layout Notification layout. Default is `"growl"`. Other valid values are: 
+#' @param layout Notification layout. Defaults to \code{"growl"}. Other valid values are: 
 #' \itemize{
-#' \item `"attached"`
-#' \item `"bar"`
+#' \item \code{"attached"}
+#' \item \code{"bar"}
 #' }
 #' @param effect Notification effect type. Valid values include:  
 #' \itemize{
-#' \item For `"growl" layout`
+#' \item For \code{"growl"} layout
 #' \itemize{
-#' \item `"scale"`
-#' \item `"jelly"`
-#' \item `"slide"`
-#' \item `"genie"` 
+#' \item \code{"scale"}
+#' \item \code{"jelly"}
+#' \item \code{"slide"}
+#' \item \code{"genie"} 
 #' } 
-#' \item For `"attached" layout`
+#' \item For\code{"attached"} layout
 #' \itemize{
-#' \item `"flip"`  
-#' \item `"bouncyflip"`
+#' \item \code{"flip"}  
+#' \item \code{"bouncyflip"}
 #' }
-#' \item For `"bar" layout`
+#' \item For \code{"bar"} layout
 #' \itemize{
-#' \item `"slidetop"` 
-#' \item `"exploader"` 
+#' \item \code{"slidetop"}
+#' \item \code{"exploader"} 
 #' }
 #' }
 #' @param session Shiny session object.

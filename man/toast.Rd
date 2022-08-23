@@ -59,20 +59,20 @@ toast(
 \item \code{"error"}
 }}
 
-\item{theme}{Theme of toast. Choose between `"light"` or `"dark"`.}
+\item{theme}{Theme of toast. Choose between \code{"light"} or \code{"dark"}.}
 
-\item{position}{Where toast will be shown. Defaults to `"bottomRight"`. Any of the following are valid:
+\item{position}{Where toast will be shown. Defaults to \code{"bottomRight"}. Valid values are:
 \itemize{
-\item bottomRight
-\item bottomLeft
-\item topRight
-\item topLeft
-\item topCenter
-\item bottomCenter
-\item center
+\item \code{"bottomRight"}
+\item \code{"bottomLeft"}
+\item \code{"topRight"}
+\item \code{"topLeft"}
+\item \code{"topCenter"}
+\item \code{"bottomCenter"}
+\item \code{"center"}
 }}
 
-\item{duration}{Time in milliseconds to close the toast. Defaults to `5000`. Use `FALSE` to disable.}
+\item{duration}{Time in milliseconds to close the toast. Defaults to \code{5000}. Use \code{FALSE} to disable.}
 
 \item{progress_bar_color}{Progress bar color. Choose between hexadecimal, RGB or keyword values.}
 
@@ -94,66 +94,66 @@ toast(
 
 \item{image}{Cover image.}
 
-\item{image_width}{Width of cover image. Defaults to `"50px"`.}
+\item{image_width}{Width of cover image. Defaults to \code{"50px"}.}
 
-\item{zindex}{The z-index CSS attribute of the toast. Defaults to `99999`.}
+\item{zindex}{The z-index CSS attribute of the toast. Defaults to \code{99999}.}
 
-\item{layout}{Size of the toast. Choose between `1` or `2`.}
+\item{layout}{Size of the toast. Choose between \code{1} or \code{2}.}
 
-\item{balloon}{Logical; if `TRUE`, applies a balloon like toast. Defaults to `FALSE`.}
+\item{balloon}{Logical; if \code{TRUE}, applies a balloon like toast. Defaults to \code{FALSE}.}
 
-\item{close}{Logical; if `TRUE` (the default), shows a \code{x} close button.}
+\item{close}{Logical; if \code{TRUE} (the default), shows a \code{x} close button.}
 
-\item{close_on_escape}{Logical; if `TRUE`, allows to close toast using ESC key. Defaults to `FALSE`.}
+\item{close_on_escape}{Logical; if \code{TRUE}, allows to close toast using ESC key. Defaults to \code{FALSE}.}
 
-\item{close_on_click}{Logical; if `TRUE`, allows to close toast by clicking on it. Defaults to `FALSE`.}
+\item{close_on_click}{Logical; if \code{TRUE}, allows to close toast by clicking on it. Defaults to \code{FALSE}.}
 
-\item{rtl}{Logical; if `TRUE`, applies Right to Left style. Defaults to `FALSE`.}
+\item{rtl}{Logical; if \code{TRUE}, applies Right to Left style. Defaults to \code{FALSE}.}
 
-\item{display_mode}{Rules to show multiple toasts. Default is `0`. Other valid values are:
+\item{display_mode}{Rules to show multiple toasts. Default is \code{0}. Valid values are:
 \itemize{
-\item 0: Waits until the current toast is closed before displaying a new one.
-\item 1: Replaces the current toast with the new toast toast.
+\item \code{0}: Waits until the current toast is closed before displaying a new one.
+\item \code{1}: Replaces the current toast with the new toast toast.
 }}
 
-\item{drag_to_close}{Logical; if `TRUE` (the default), toast can be closed by dragging it.}
+\item{drag_to_close}{Logical; if \code{TRUE} (the default), toast can be closed by dragging it.}
 
-\item{pause_on_hover}{Logical; if `TRUE` (the default), pauses the toast timeout while the cursor is on it.}
+\item{pause_on_hover}{Logical; if \code{TRUE} (the default), pauses the toast timeout while the cursor is on it.}
 
-\item{reset_on_hover}{Logical; if `TRUE`, resets the toast timeout while the cursor is on it. Defaults to    #' `FALSE`.}
+\item{reset_on_hover}{Logical; if \code{TRUE}, resets the toast timeout while the cursor is on it. Defaults to \code{FALSE}.}
 
-\item{progress_bar_easing}{Animation easing of progress bar. Defaults to `"linear"`.}
+\item{progress_bar_easing}{Animation easing of progress bar. Defaults to \code{"linear"}.}
 
-\item{overlay}{Logical; if `TRUE`, displays the overlay layer on the page. Defaults to `FALSE`.}
+\item{overlay}{Logical; if \code{TRUE}, displays the overlay layer on the page. Defaults to \code{FALSE}.}
 
-\item{overlay_close}{Logical; if `TRUE`, allows to close the toast by clicking on the overlay. Defaults to   #' `FALSE`.}
+\item{overlay_close}{Logical; if \code{TRUE}, allows to close the toast by clicking on the overlay. Defaults to \code{FALSE}.}
 
-\item{overlay_color}{Overlay background color. Defaults to `"rgba(0, 0, 0, 0.6)"`. Choose between hexadecimal, #' RGB or keyword values.}
+\item{overlay_color}{Overlay background color. Defaults to \code{"rgba(0, 0, 0, 0.6)"}. Choose between hexadecimal, RGB or keyword values.}
 
-\item{animate_inside}{Logical; if `TRUE` (the default), enables animation of elements in the toast.}
+\item{animate_inside}{Logical; if \code{TRUE} (the default), enables animation of elements in the toast.}
 
-\item{transition_in}{Toast open animation. Defaults to `"fadeInUp"`. It can be any of the following:
+\item{transition_in}{Toast open animation. Defaults to \code{"fadeInUp"}. Valid values are:
 \itemize{
-\item bounceInLeft
-\item bounceInRight
-\item bounceInUp
-\item bounceInDown
-\item fadeIn
-\item fadeInDown
-\item fadeInUp
-\item fadeInLeft
-\item fadeInRight
-\item flipInX
+\item \code{"bounceInLeft"}
+\item \code{"bounceInRight"}
+\item \code{"bounceInUp"}
+\item \code{"bounceInDown"}
+\item \code{"fadeIn"}
+\item \code{"fadeInDown"}
+\item \code{"fadeInUp"}
+\item \code{"fadeInLeft"}
+\item \code{"fadeInRight"}
+\item \code{"flipInX"}
 }}
 
-\item{transition_out}{Toast close animation. Defaults to `"fadeOut"`. It can be any of the following:
+\item{transition_out}{Toast close animation. Defaults to \code{"fadeOut"}. Valid values are:
 \itemize{
-\item fadeOut
-\item fadeOutDown
-\item fadeOutUp
-\item fadeOutLeft
-\item fadeOutRight
-\item flipOutX
+\item \code{"fadeOut"}
+\item \code{"fadeOutDown"}
+\item \code{"fadeOutUp"}
+\item \code{"fadeOutLeft"}
+\item \code{"fadeOutRight"}
+\item \code{"flipOutX"}
 }}
 
 \item{session}{Shiny session object.}

@@ -4,46 +4,46 @@
 #' 
 #' @param title Dialog title.
 #' @param message Dialog contents.
-#' @param type Dialog type. Defaults to `"success"`. Valid values are: 
+#' @param type Dialog type. Defaults to \code{"success"}. Valid values are: 
 #' \itemize{
-#' \item `"success"`
-#' \item `"error"`
-#' \item `"warning"`
-#' \item `"message"`
+#' \item \code{"success"}
+#' \item \code{"error"}
+#' \item \code{"warning"}
+#' \item \code{"message"}
 #' }
-#' @param btn_label The `OK` button label.
-#' @param transition Transition effect to be used when showing/hiding the dialog. Defaults to `"pulse"`. Valid values are: 
+#' @param btn_label The \code{OK} button label.
+#' @param transition Transition effect to be used when showing/hiding the dialog. Defaults to \code{"pulse"}. Valid values are: 
 #' \itemize{
-#' \item `"pulse"`
-#' \item `"slide"`
-#' \item `"zoom"`
-#' \item `"fade"`
-#' \item `"flipx"`
-#' \item `"flipy"`
+#' \item \code{"pulse"}
+#' \item \code{"slide"}
+#' \item \code{"zoom"}
+#' \item \code{"fade"}
+#' \item \code{"flipx"}
+#' \item \code{"flipy"}
 #' }
-#' @param delay The time (in seconds) to wait before the notification is auto-dismissed. `0` will keep notification open till clicked.
-#' @param position Position of the notification. Defaults to `"bottom-right"`. Valid values are:  
+#' @param delay The time (in seconds) to wait before the notification is auto-dismissed. \code{0} will keep notification open till clicked.
+#' @param position Position of the notification. Defaults to \code{"bottom-right"}. Valid values are:  
 #' \itemize{
-#' \item `"bottom-right"`
-#' \item `"bottom-left"`
-#' \item `"bottom-center"`
-#' \item `"top-right"`
-#' \item `"top-left"`
-#' \item `"top-center"`
+#' \item \code{"bottom-right"}
+#' \item \code{"bottom-left"}
+#' \item \code{"bottom-center"}
+#' \item \code{"top-right"}
+#' \item \code{"top-left"}
+#' \item \code{"top-center"}
 #' }
-#' @param transition_off Logical; if `TRUE`, transition effect is disabled. Defaults to `FALSE`.
-#' @param closable Logical; if `TRUE` (the default), a `Close` button is displayed in the header of the dialog.
-#' @param auto_reset Logical; if `TRUE` (the default), the dialog will reset size/position on window resize.
-#' @param frameless Logical; if `TRUE`, hides both header and footer of the dialog. Defaults to `FALSE`.
-#' @param maximizable Logical; if `TRUE` (the default), the `Maximize` button is displayed in the header of the dialog.
-#' @param modal Logical; if `TRUE` (the default), a screen dimmer will be used and access to the page contents will be prevented.
-#' @param movable Logical; if `TRUE` (the default), the dialog is movable.
-#' @param move_bounded Logical; if `TRUE`, the dialog is not allowed to go off-screen. Defaults to `FALSE`.
-#' @param overflow Logical; if `TRUE` (the default), the content overflow is managed by the dialog
-#' @param padding Logical; if `TRUE` (the default), the content padding is managed by the dialog.
-#' @param pinnable Logical; if `TRUE` (the default), the `Pin`` button is displayed in the header of the dialog.
-#' @param resizeable Logical; if `TRUE`, the dialog is resizable. Defaults to `FALSE`. 
-#' @param start_maximized Logical; if `TRUE`, the dialog will start in a maximized state. Defaults to `FALSE`.
+#' @param transition_off Logical; if \code{TRUE}, transition effect is disabled. Defaults to \code{FALSE}.
+#' @param closable Logical; if \code{TRUE} (the default), a |code{Close} button is displayed in the header of the dialog.
+#' @param auto_reset Logical; if \code{TRUE} (the default), the dialog will reset size/position on window resize.
+#' @param frameless Logical; if \code{TRUE}, hides both header and footer of the dialog. Defaults to \code{FALSE}.
+#' @param maximizable Logical; if \code{TRUE} (the default), the \code{Maximize} button is displayed in the header of the dialog.
+#' @param modal Logical; if \code{TRUE} (the default), a screen dimmer will be used and access to the page contents will be prevented.
+#' @param movable Logical; if \code{TRUE} (the default), the dialog is movable.
+#' @param move_bounded Logical; if \code{TRUE}, the dialog is not allowed to go off-screen. Defaults to \code{FALSE}.
+#' @param overflow Logical; if \code{TRUE} (the default), the content overflow is managed by the dialog
+#' @param padding Logical; if \code{TRUE} (the default), the content padding is managed by the dialog.
+#' @param pinnable Logical; if \code{TRUE} (the default), the \code{Pin} button is displayed in the header of the dialog.
+#' @param resizeable Logical; if \code{TRUE}, the dialog is resizable. Defaults to \code{FALSE}. 
+#' @param start_maximized Logical; if \code{TRUE}, the dialog will start in a maximized state. Defaults to \code{FALSE}.
 #' @param session Shiny session object.
 #' 
 #' @section Functions:

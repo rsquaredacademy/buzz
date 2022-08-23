@@ -4,21 +4,24 @@
 #' 
 #' @param id The id of the element to attach the tooltip.
 #' @param tip Content of the tooltip.
-#' @param position Where the tooltip should appear relative to the target element. Defaults to `"top"`. Other valid     #' values are: 
+#' @param position Where the tooltip should appear relative to the target element. Defaults to \code{"top"}. Valid values are: 
 #' \itemize{
-#' \item `"bottom"`
-#' \item `"left"`
-#' \item `"right"`
-#' \item `"top-left"`
-#' \item `"top-right"`
-#' \item `"bottom-left"`
-#' \item `"bottom-right"`
+#' \item \code{"top"}
+#' \item \code{"bottom"}
+#' \item \code{"left"}
+#' \item \code{"right"}
+#' \item \code{"top-left"}
+#' \item \code{"top-right"}
+#' \item \code{"bottom-left"}
+#' \item \code{"bottom-right"}
 #' }
-#' @param size Size of the tooltip. Defaults to `"fit"` as the tooltip will takeup only the size it requires to show the #' text. Other valid values are:  
+#' @param size Size of the tooltip. Defaults to \code{"fit"} as the tooltip will takeup only the size it requires to show the text. 
+#' Valid values are:  
 #' \itemize{
-#' \item `"small"`
-#' \item `"medium"`
-#' \item `"large"`
+#' \item \code{"fit"}
+#' \item \code{"small"}
+#' \item \code{"medium"}
+#' \item \code{"large"}
 #' }
 #' @param session Shiny session object.
 #' 

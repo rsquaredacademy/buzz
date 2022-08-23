@@ -14,8 +14,8 @@ knitr::opts_chunk$set(
 )
 ```
 
-**buzz** offers several types of alerts, notifications and tooltips. This 
-document is a quickstart guide for using **buzz** in your Shiny applications. 
+buzz offers several types of alerts, notifications and tooltips. This 
+document is a quickstart guide for using buzz in your Shiny applications. 
 Let us look at a simple example below:
 
 ```{r example, eval=FALSE}
@@ -41,12 +41,14 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 ```
 
-To use alerts or notifica from **buzz** in your Shiny application, follow the below steps:
+To use alerts or notifications from **buzz** in your Shiny application, follow the below steps:
 
 - Include the dependencies in the **UI** part of the app using the appropriate
 `use*` functions (`useToast()` in the above example).
 - Include the corresponding rendering function in the **Server** part of the 
 app (`toast()` in the above example).
+
+## Details
 
 The below table displays the dependency and rendering functions along with references:
 
