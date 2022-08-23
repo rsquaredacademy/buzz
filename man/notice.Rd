@@ -55,7 +55,7 @@ notice(
 \item{session}{Shiny session object.}
 }
 \value{
-\value{None}
+None
 }
 \description{
 Simple website notifications with effects

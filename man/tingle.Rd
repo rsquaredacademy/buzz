@@ -38,7 +38,7 @@ tingle(
 \item{session}{Shiny session object.}
 }
 \value{
-\value{None}
+None
 }
 \description{
 Minimalist and easy to use modals.

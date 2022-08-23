@@ -55,7 +55,7 @@
 #' }
 #'
 #' @name bootBox
-#' @return \value{None}
+#' @return None
 #'
 #' @export
 #'

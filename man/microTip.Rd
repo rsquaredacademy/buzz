@@ -44,7 +44,7 @@ Valid values are:
 \item{session}{Shiny session object.}
 }
 \value{
-\value{None}
+None
 }
 \description{
 Minimal CSS only tooltip.

@@ -78,7 +78,7 @@ this height, scrollbars will appear. Use \code{NULL} to remove this restriction.
 \item{session}{Shiny session object.}
 }
 \value{
-\value{None}
+None
 }
 \description{
 Beautiful notifications and prompts.

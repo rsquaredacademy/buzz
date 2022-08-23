@@ -58,7 +58,7 @@
 #' }
 #'
 #' @name microTip
-#' @return \value{None}
+#' @return None
 #'
 #' @export
 #'

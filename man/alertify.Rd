@@ -105,7 +105,7 @@ useAlertify()
 }}
 }
 \value{
-\value{None}
+None
 }
 \description{
 Pretty browser alerts and notifications.

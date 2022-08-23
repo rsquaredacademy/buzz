@@ -18,7 +18,7 @@ previewBuzz(type = "toast")
 }}
 }
 \value{
-\value{None}
+None
 }
 \description{
 Preview different types of alerts/notifications.

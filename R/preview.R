@@ -12,7 +12,7 @@
 #' \item toast
 #' }
 #'
-#' @return \value{None}
+#' @return None
 #' @export
 #'
 previewBuzz <- function(type = "toast") {

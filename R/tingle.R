@@ -48,7 +48,7 @@
 #' }
 #'
 #' @name tingle
-#' @return \value{None}
+#' @return None
 #'
 #' @export
 #'

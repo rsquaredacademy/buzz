@@ -159,7 +159,7 @@ toast(
 \item{session}{Shiny session object.}
 }
 \value{
-\value{None}
+None
 }
 \description{
 Lightweight toast notifications

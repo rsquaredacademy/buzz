@@ -104,7 +104,7 @@
 #' }
 #'
 #' @name alertify
-#' @return \value{None}
+#' @return None
 #'
 NULL
 
