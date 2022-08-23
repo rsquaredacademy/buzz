@@ -95,7 +95,7 @@
 
 
 <dt>size</dt>
-<dd><p>Size of the tooltip. Defaults to <code>"fit"</code> as the tooltip will takeup only the size it requires to show the text. 
+<dd><p>Size of the tooltip. Defaults to <code>"fit"</code> as the tooltip will takeup only the size it requires to show the text.
 Valid values are:</p><ul><li><p><code>"fit"</code></p></li>
 <li><p><code>"small"</code></p></li>
 <li><p><code>"medium"</code></p></li>
@@ -108,6 +108,12 @@ Valid values are:</p><ul><li><p><code>"fit"</code></p></li>
 
 </dl></div>
     <div class="section level2">
+    <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
+    
+
+<p>None</p>
+    </div>
+    <div class="section level2">
     <h2 id="functions">Functions<a class="anchor" aria-label="anchor" href="#functions"></a></h2>
     
 
@@ -117,8 +123,7 @@ Valid values are:</p><ul><li><p><code>"fit"</code></p></li>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"> </span>
-<span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/interactive.html" class="external-link">interactive</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/interactive.html" class="external-link">interactive</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
 <span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://shiny.rstudio.com/" class="external-link">shiny</a></span><span class="op">)</span></span>
 <span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">buzz</span><span class="op">)</span></span>
 <span class="r-in"></span>
@@ -134,10 +139,10 @@ Valid values are:</p><ul><li><p><code>"fit"</code></p></li>
 <span class="r-in"><span class="va">server</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">input</span>, <span class="va">output</span>, <span class="va">session</span><span class="op">)</span> <span class="op">{</span></span>
 <span class="r-in"></span>
 <span class="r-in">  <span class="co"># display tooltip</span></span>
-<span class="r-in">  <span class="fu">microTip</span><span class="op">(</span>id <span class="op">=</span> <span class="st">"btn"</span>, </span>
+<span class="r-in">  <span class="fu">microTip</span><span class="op">(</span>id <span class="op">=</span> <span class="st">"btn"</span>,</span>
 <span class="r-in">           tip <span class="op">=</span> <span class="st">"Hey there! This is a micro tip!"</span>,</span>
 <span class="r-in">           position <span class="op">=</span> <span class="st">"bottom-right"</span><span class="op">)</span></span>
-<span class="r-in">  </span>
+<span class="r-in"></span>
 <span class="r-in"><span class="op">}</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/shiny/man/shinyApp.html" class="external-link">shinyApp</a></span><span class="op">(</span><span class="va">ui</span>, <span class="va">server</span><span class="op">)</span></span>
