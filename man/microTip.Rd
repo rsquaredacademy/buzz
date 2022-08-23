@@ -20,7 +20,7 @@ microTip(
 
 \item{tip}{Content of the tooltip.}
 
-\item{position}{Where the tooltip should appear relative to the target element. Defaults to \code{"top"}. Valid values are: 
+\item{position}{Where the tooltip should appear relative to the target element. Defaults to \code{"top"}. Valid values are:
 \itemize{
 \item \code{"top"}
 \item \code{"bottom"}
@@ -32,8 +32,8 @@ microTip(
 \item \code{"bottom-right"}
 }}
 
-\item{size}{Size of the tooltip. Defaults to \code{"fit"} as the tooltip will takeup only the size it requires to show the text. 
-Valid values are:  
+\item{size}{Size of the tooltip. Defaults to \code{"fit"} as the tooltip will takeup only the size it requires to show the text.
+Valid values are:
 \itemize{
 \item \code{"fit"}
 \item \code{"small"}
@@ -42,6 +42,9 @@ Valid values are:
 }}
 
 \item{session}{Shiny session object.}
+}
+\value{
+\value{None}
 }
 \description{
 Minimal CSS only tooltip.
@@ -55,7 +58,6 @@ Minimal CSS only tooltip.
 }
 
 \examples{
- 
 if (interactive()) {
 library(shiny)
 library(buzz)
@@ -72,10 +74,10 @@ ui <- fluidPage(
 server <- function(input, output, session) {
 
   # display tooltip
-  microTip(id = "btn", 
+  microTip(id = "btn",
            tip = "Hey there! This is a micro tip!",
            position = "bottom-right")
-  
+
 }
 
 shinyApp(ui, server)

@@ -36,8 +36,8 @@ useBootBox()
 
 \item{show}{Logical; if \code{TRUE} (the default), the dialog is shown immediately.}
 
-\item{backdrop}{Logical; if \code{TRUE}, the backdrop is displayed and clicking on it dismisses the dialog. Defaults to \code{NULL}. 
-Valid values are: 
+\item{backdrop}{Logical; if \code{TRUE}, the backdrop is displayed and clicking on it dismisses the dialog. Defaults to \code{NULL}.
+Valid values are:
 \itemize{
 \item \code{NULL}: The backdrop is displayed, but clicking on it has no effect.
 \item \code{TRUE}: The backdrop is displayed, and clicking on it dismisses the dialog.
@@ -52,6 +52,9 @@ Valid values are:
 
 \item{session}{Shiny session object.}
 }
+\value{
+\value{None}
+}
 \description{
 Bootstrap modals made easy.
 }
@@ -64,7 +67,6 @@ Bootstrap modals made easy.
 }
 
 \examples{
- 
 if (interactive()) {
 library(shiny)
 library(buzz)

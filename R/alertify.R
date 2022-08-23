@@ -1,10 +1,10 @@
-#' Alertify 
-#' 
+#' Alertify
+#'
 #' Pretty browser alerts and notifications.
-#' 
+#'
 #' @param title Dialog title.
 #' @param message Dialog contents.
-#' @param type Dialog type. Defaults to \code{"success"}. Valid values are: 
+#' @param type Dialog type. Defaults to \code{"success"}. Valid values are:
 #' \itemize{
 #' \item \code{"success"}
 #' \item \code{"error"}
@@ -12,7 +12,7 @@
 #' \item \code{"message"}
 #' }
 #' @param btn_label The \code{OK} button label.
-#' @param transition Transition effect to be used when showing/hiding the dialog. Defaults to \code{"pulse"}. Valid values are: 
+#' @param transition Transition effect to be used when showing/hiding the dialog. Defaults to \code{"pulse"}. Valid values are:
 #' \itemize{
 #' \item \code{"pulse"}
 #' \item \code{"slide"}
@@ -22,7 +22,7 @@
 #' \item \code{"flipy"}
 #' }
 #' @param delay The time (in seconds) to wait before the notification is auto-dismissed. \code{0} will keep notification open till clicked.
-#' @param position Position of the notification. Defaults to \code{"bottom-right"}. Valid values are:  
+#' @param position Position of the notification. Defaults to \code{"bottom-right"}. Valid values are:
 #' \itemize{
 #' \item \code{"bottom-right"}
 #' \item \code{"bottom-left"}
@@ -42,76 +42,77 @@
 #' @param overflow Logical; if \code{TRUE} (the default), the content overflow is managed by the dialog
 #' @param padding Logical; if \code{TRUE} (the default), the content padding is managed by the dialog.
 #' @param pinnable Logical; if \code{TRUE} (the default), the \code{Pin} button is displayed in the header of the dialog.
-#' @param resizeable Logical; if \code{TRUE}, the dialog is resizable. Defaults to \code{FALSE}. 
+#' @param resizeable Logical; if \code{TRUE}, the dialog is resizable. Defaults to \code{FALSE}.
 #' @param start_maximized Logical; if \code{TRUE}, the dialog will start in a maximized state. Defaults to \code{FALSE}.
 #' @param session Shiny session object.
-#' 
+#'
 #' @section Functions:
 #' \itemize{
 #' \item \code{useAlertify}: Dependencies to include in your UI.
 #' \item \code{alertify_alert}: Display alerts.
 #' \item \code{alertify_notify}: Display notifications.
 #' }
-#' 
-#' @examples  
-#' 
+#'
+#' @examples
+#'
 #' # Example 1: Alert
 #' if (interactive()) {
 #' library(shiny)
 #' library(buzz)
-#' 
+#'
 #' ui <- fluidPage(
-#' 
+#'
 #'   useAlertify(), # include dependencies
 #'   actionButton(inputId = "btn",
 #'                label   = "Alert Demo")
-#' 
+#'
 #' )
-#' 
+#'
 #' server <- function(input, output, session) {
-#' 
+#'
 #'   observeEvent(input$btn, {
 #'     # display alert
 #'     alertify_alert("Hey there!", "Thank you for exploring buzz!")
 #'   })
 #' }
-#' 
+#'
 #' shinyApp(ui, server)
 #' }
-#' 
+#'
 #' # Example 2: Notification
 #' if (interactive()) {
 #' library(shiny)
 #' library(buzz)
-#' 
+#'
 #' ui <- fluidPage(
-#' 
+#'
 #'   useAlertify(), # include dependencies
 #'   actionButton(inputId = "btn",
 #'                label   = "Notification Demo")
-#' 
+#'
 #' )
-#' 
+#'
 #' server <- function(input, output, session) {
-#' 
+#'
 #'   observeEvent(input$btn, {
 #'     # display notification
 #'     alertify_notify("Hey there! Thank you for exploring buzz!")
 #'   })
 #' }
-#' 
+#'
 #' shinyApp(ui, server)
 #' }
-#' 
-#' @name alertify 
-#' 
+#'
+#' @name alertify
+#' @return \value{None}
+#'
 NULL
 
 #' @rdname alertify
 #' @export
-#' 
+#'
 alertify_alert <- function(title = "Alert Title", message = "Alert Message", type = "success",
-                           btn_label = "OK", transition = "pulse", transition_off = FALSE, 
+                           btn_label = "OK", transition = "pulse", transition_off = FALSE,
                            closable = TRUE, auto_reset = FALSE, frameless = FALSE,
                            maximizable = FALSE, modal = FALSE, movable = FALSE, move_bounded = TRUE,
                            overflow = FALSE, padding = TRUE, pinnable = FALSE, resizeable = FALSE,
@@ -146,10 +147,10 @@ alertify_alert <- function(title = "Alert Title", message = "Alert Message", typ
 }
 
 #' @rdname alertify
-#' @export 
-#' 
+#' @export
+#'
 alertify_notify <- function(message = "Alert Message", type = "success", delay = 5,
-                            position = "bottom-right", 
+                            position = "bottom-right",
                             session = getDefaultReactiveDomain()) {
 
   notice = list(

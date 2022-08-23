@@ -17,6 +17,9 @@ previewBuzz(type = "toast")
 \item toast
 }}
 }
+\value{
+\value{None}
+}
 \description{
 Preview different types of alerts/notifications.
 }

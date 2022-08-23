@@ -18,14 +18,14 @@ notice(
 \arguments{
 \item{message}{Notification message.}
 
-\item{type}{Notification type. Defaults to \code{"notice"}. Other valid values are: 
+\item{type}{Notification type. Defaults to \code{"notice"}. Other valid values are:
 \itemize{
 \item \code{"success"}
 \item \code{"warning"}
 \item \code{"error"}
 }}
 
-\item{layout}{Notification layout. Defaults to \code{"growl"}. Other valid values are: 
+\item{layout}{Notification layout. Defaults to \code{"growl"}. Other valid values are:
 \itemize{
 \item \code{"attached"}
 \item \code{"bar"}
@@ -38,21 +38,24 @@ notice(
 \item \code{"scale"}
 \item \code{"jelly"}
 \item \code{"slide"}
-\item \code{"genie"} 
-} 
+\item \code{"genie"}
+}
 \item For\code{"attached"} layout
 \itemize{
-\item \code{"flip"}  
+\item \code{"flip"}
 \item \code{"bouncyflip"}
 }
 \item For \code{"bar"} layout
 \itemize{
 \item \code{"slidetop"}
-\item \code{"exploader"} 
+\item \code{"exploader"}
 }
 }}
 
 \item{session}{Shiny session object.}
+}
+\value{
+\value{None}
 }
 \description{
 Simple website notifications with effects
@@ -66,7 +69,6 @@ Simple website notifications with effects
 }
 
 \examples{
- 
 if (interactive()) {
 library(shiny)
 library(buzz)

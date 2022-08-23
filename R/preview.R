@@ -11,6 +11,8 @@
 #' \item tingle
 #' \item toast
 #' }
+#'
+#' @return \value{None}
 #' @export
 #'
 previewBuzz <- function(type = "toast") {
@@ -23,27 +25,30 @@ previewBuzz <- function(type = "toast") {
                 "tingle"   = useTingle(),
                 "toast"    = useToast())
 
-  ui <- fluidPage(
-    dep
-  )
+  if (interactive()) {
 
-  server <- function(input, output, session) {
+    ui <- fluidPage(
+      dep
+    )
 
-    if (type == "alertify") {
-      alertify_alert("Hey there!", "Thank you for exploring buzz!")
-    } else if (type == "bootbox") {
-      bootBox("Hey there!", "Thank you for exploring buzz!")
-    } else if (type == "notice") {
-      notice("Thank you for exploring buzz!")
-    } else if (type == "notify") {
-      notify("Hey there!", "Thank you for exploring buzz!")
-    } else if (type == "tingle") {
-      tingle("Thank you for exploring buzz!")
-    } else if (type == "toast") {
-      toast("Hey there!", "Thank you for exploring buzz.")
+    server <- function(input, output, session) {
+
+      if (type == "alertify") {
+        alertify_alert("Hey there!", "Thank you for exploring buzz!")
+      } else if (type == "bootbox") {
+        bootBox("Hey there!", "Thank you for exploring buzz!")
+      } else if (type == "notice") {
+        notice("Thank you for exploring buzz!")
+      } else if (type == "notify") {
+        notify("Hey there!", "Thank you for exploring buzz!")
+      } else if (type == "tingle") {
+        tingle("Thank you for exploring buzz!")
+      } else if (type == "toast") {
+        toast("Hey there!", "Thank you for exploring buzz.")
+      }
+
     }
 
+    shinyApp(ui, server)
   }
-
-  shinyApp(ui, server)
 }

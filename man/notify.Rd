@@ -54,7 +54,7 @@ notify(
 
 \item{mouse_reset}{Logical; if \code{TRUE} (the default), resets the hide timer if the mouse moves over the notice.}
 
-\item{animation}{The animation to be used while displaying and hiding the notice. \code{"none"} and \code{"fade"} (the default) 
+\item{animation}{The animation to be used while displaying and hiding the notice. \code{"none"} and \code{"fade"} (the default)
 are supported out of the box.}
 
 \item{animate_speed}{Speed at which the notice animates in and out. Valid values are:
@@ -68,7 +68,7 @@ are supported out of the box.}
 
 \item{min_height}{Minimum height of the notice. Default is \code{"16px"}. It will expand to fit the content.}
 
-\item{max_text_height}{Maximum height of the text container. Default is \code{"200px"}. If the text goes beyond 
+\item{max_text_height}{Maximum height of the text container. Default is \code{"200px"}. If the text goes beyond
 this height, scrollbars will appear. Use \code{NULL} to remove this restriction.}
 
 \item{translucent}{Logical; if \code{TRUE}, creates see through notice. Defaults to \code{FALSE}.}
@@ -76,6 +76,9 @@ this height, scrollbars will appear. Use \code{NULL} to remove this restriction.
 \item{non_blocking}{Logical; if \code{TRUE}, notice fades to show elements underneath. Defaults to \code{FALSE}.}
 
 \item{session}{Shiny session object.}
+}
+\value{
+\value{None}
 }
 \description{
 Beautiful notifications and prompts.
@@ -89,7 +92,6 @@ Beautiful notifications and prompts.
 }
 
 \examples{
- 
 if (interactive()) {
 library(shiny)
 library(buzz)

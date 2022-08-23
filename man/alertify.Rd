@@ -44,7 +44,7 @@ useAlertify()
 
 \item{message}{Dialog contents.}
 
-\item{type}{Dialog type. Defaults to \code{"success"}. Valid values are: 
+\item{type}{Dialog type. Defaults to \code{"success"}. Valid values are:
 \itemize{
 \item \code{"success"}
 \item \code{"error"}
@@ -54,7 +54,7 @@ useAlertify()
 
 \item{btn_label}{The \code{OK} button label.}
 
-\item{transition}{Transition effect to be used when showing/hiding the dialog. Defaults to \code{"pulse"}. Valid values are: 
+\item{transition}{Transition effect to be used when showing/hiding the dialog. Defaults to \code{"pulse"}. Valid values are:
 \itemize{
 \item \code{"pulse"}
 \item \code{"slide"}
@@ -104,6 +104,9 @@ useAlertify()
 \item \code{"top-center"}
 }}
 }
+\value{
+\value{None}
+}
 \description{
 Pretty browser alerts and notifications.
 }
@@ -117,7 +120,6 @@ Pretty browser alerts and notifications.
 }
 
 \examples{
- 
 
 # Example 1: Alert
 if (interactive()) {

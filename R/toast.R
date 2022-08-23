@@ -1,10 +1,10 @@
 #' iziToast
-#' 
+#'
 #' Lightweight toast notifications
-#' 
+#'
 #' @param title Title of the toast.
 #' @param message Message of toast.
-#' @param type Type of notification. Defaults to \code{NULL}. Valid values are:  
+#' @param type Type of notification. Defaults to \code{NULL}. Valid values are:
 #' \itemize{
 #' \item \code{"info"}
 #' \item \code{"success"}
@@ -77,43 +77,44 @@
 #' \item \code{"flipOutX"}
 #' }
 #' @param session Shiny session object.
-#' 
+#'
 #' @section Functions:
 #' \itemize{
 #' \item \code{useToast}: Dependencies to include in your UI.
 #' \item \code{toast}: Display toast notifications.
 #' }
-#' 
-#' @examples  
+#'
+#' @examples
 #' if (interactive()) {
 #' library(shiny)
 #' library(buzz)
-#' 
+#'
 #' ui <- fluidPage(
-#' 
+#'
 #'   useToast(), # include dependencies
 #'   actionButton(inputId = "btn",
 #'                label   = "iziToast Demo")
-#' 
+#'
 #' )
-#' 
+#'
 #' server <- function(input, output, session) {
-#' 
+#'
 #'   observeEvent(input$btn, {
 #'     # display toast notification
 #'     toast("Hey there!", "Thank you for exploring buzz!")
 #'   })
 #' }
-#' 
+#'
 #' shinyApp(ui, server)
 #' }
-#' 
+#'
 #' @name toast
-#' 
+#' @return \value{None}
+#'
 #' @export
-#' 
-toast <- function(title = "Hey", message = NULL, type = NULL, theme = NULL, position = "center", 
-                 duration = 5000, progress_bar_color = NULL, background_color = NULL, 
+#'
+toast <- function(title = "Hey", message = NULL, type = NULL, theme = NULL, position = "center",
+                 duration = 5000, progress_bar_color = NULL, background_color = NULL,
                  max_width = NULL, title_color = NULL, title_size = NULL, title_line_height = NULL,
                  message_color = NULL, message_size = NULL, message_line_height = NULL,
                  image = NULL, image_width = NULL, zindex = 99999, layout = 1,
@@ -159,7 +160,7 @@ toast <- function(title = "Hey", message = NULL, type = NULL, theme = NULL, posi
     animateInside     = animate_inside,
     transitionIn      = transition_in,
     transitionOut     = transition_out
-  ) 
+  )
 
   session$sendCustomMessage(
     type    = 'toast.send',

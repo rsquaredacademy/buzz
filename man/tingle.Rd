@@ -23,19 +23,22 @@ tingle(
 
 \item{button_label}{Label of \code{close_button}.}
 
-\item{button_type}{Type of button. Defaults to \code{"default"}. Other valid values are: 
+\item{button_type}{Type of button. Defaults to \code{"default"}. Other valid values are:
 \itemize{
 \item \code{"primary"}
 \item \code{"danger"}
 }}
 
-\item{button_position}{Position of the button inside the modal. Defaults to \code{"right"}. Valid values are: 
+\item{button_position}{Position of the button inside the modal. Defaults to \code{"right"}. Valid values are:
 \itemize{
 \item \code{"right"}
 \item \code{"left"}
 }}
 
 \item{session}{Shiny session object.}
+}
+\value{
+\value{None}
 }
 \description{
 Minimalist and easy to use modals.
@@ -49,7 +52,6 @@ Minimalist and easy to use modals.
 }
 
 \examples{
- 
 if (interactive()) {
 library(shiny)
 library(buzz)

@@ -158,6 +158,9 @@ toast(
 
 \item{session}{Shiny session object.}
 }
+\value{
+\value{None}
+}
 \description{
 Lightweight toast notifications
 }
@@ -170,7 +173,6 @@ Lightweight toast notifications
 }
 
 \examples{
- 
 if (interactive()) {
 library(shiny)
 library(buzz)
